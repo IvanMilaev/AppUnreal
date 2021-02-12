@@ -7,7 +7,10 @@
 		{
 			"Name": "App",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
@@ -31,6 +34,10 @@
 		},
 		{
 			"Name": "MoviePipelineMaskRenderPass",
+			"Enabled": true
+		},
+		{
+			"Name": "PreLoadScreenMoviePlayer",
 			"Enabled": true
 		}
 	]
