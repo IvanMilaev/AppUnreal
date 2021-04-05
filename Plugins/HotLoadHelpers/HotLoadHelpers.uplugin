@@ -1,0 +1,24 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "HotLoad Helpers",
+  "Description": "Wrapper for some FPath and over file/directory related functions AND Spawning a network client for data preparation",
+  "Category": "File",
+  "CreatedBy": "Epic Games",
+  "CreatedByURL": "https://www.epicgames.com/site/en-US/home",
+  "DocsURL": "",
+  "MarketplaceURL": "",
+  "SupportURL": "",
+  "CanContainContent": false,
+  "IsBetaVersion": false,
+  "IsExperimentalVersion": false,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "HotLoadHelpers",
+      "Type": "Runtime",
+      "LoadingPhase": "PreLoadingScreen"
+    }
+  ]
+}

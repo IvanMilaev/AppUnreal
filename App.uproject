@@ -39,6 +39,10 @@
 		{
 			"Name": "PreLoadScreenMoviePlayer",
 			"Enabled": true
+		},
+		{
+			"Name": "PixelStreaming",
+			"Enabled": true
 		}
 	]
 }
