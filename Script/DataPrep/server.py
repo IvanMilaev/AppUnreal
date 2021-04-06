@@ -211,6 +211,9 @@ cmd_ser_finish_cook = 'FINISH COOK'
 cmd_ser_finish_copy = 'FINISH COPY'
 cmd_ser_waiting_commands = 'WAITING COMMANDS'
 cmd_ack = 'ACK'
+
+cmd_cli_start_assets_to_pak = "COMPRESS ASSETS TO PAK" 
+
 #one of the client is stopping the server
 b_stop_server = False
 #default value
