@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "Dom/JsonObject.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "HotLoadAssetManagerBPLibrary.generated.h"
 
@@ -59,6 +60,11 @@ class UHotLoadAssetManagerBPLibrary : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintPure, Category = "Utilities")
 	static bool IsWithEditor();
+
+
+	UFUNCTION(BlueprintPure, Category = "Utilities")
+	static TSharedPtr<FJsonObject> ParseJSONString(FString& IN_JSONString);
+	
 
 private:
 	static bool MatchesExtension(const FString& FileName, const TArray<FString>& Extensions);

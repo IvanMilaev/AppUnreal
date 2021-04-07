@@ -40,7 +40,9 @@ public class HotLoadAssetManager : ModuleRules
 				"SlateCore",
 				"Sockets",
 				"Networking",
-				"PakFile"
+				"PakFile",
+				"HTTP", 
+				"Json"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
