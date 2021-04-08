@@ -37,7 +37,8 @@ class  FClientWorker : public FRunnable
     FThreadSafeCounter StopTaskCounter;
 
 private:
-    FString cmd_server_confirmation, cmd_cli_prepare_for_job, cmd_cli_start_job, cmd_cli_cancel_job;
+    FString cmd_server_confirmation, cmd_cli_prepare_for_job, cmd_cli_start_job, cmd_cli_cancel_job, cmd_cli_waiting_for_statuses,
+        cmd_cli_job_completed;
     FSocket* listenSocket;
     FString server_adress;
     FString job_description;
@@ -53,12 +54,15 @@ private:
 
     bool SendDataToServer(FString IN_Data);
     bool WaitForMessage(FString msg);
+    void WaitStatus();
     bool isSocketWorks();
     bool ParseJobDescriptionToJSON();
     bool ConnectServer();
+    void DisconnectFromServer();
     void SendJobToServer();
     void ProcessJob(int IN_Step);
     void AssetHotLoadProcess(int IN_Step);
+    void FinishJob();
 
 public:
     bool IsFinished() const;

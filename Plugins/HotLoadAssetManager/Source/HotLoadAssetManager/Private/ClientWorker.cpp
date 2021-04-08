@@ -14,6 +14,8 @@ FClientWorker::FClientWorker(const FString& IN_IPAdress, const int IN_Port)
 	cmd_cli_prepare_for_job = FString("PREPARE_TO_JOB");
 	cmd_cli_start_job = FString("START_JOB");
 	cmd_cli_cancel_job = FString("CANCEL_JOB");
+	cmd_cli_waiting_for_statuses = FString("WAITING_FOR_JOB_PROCESSING_STATUS");
+	cmd_cli_job_completed = FString("JOB_COMPLETED");
 }
 
 void FClientWorker::Start()
@@ -79,12 +81,37 @@ void FClientWorker::AssetHotLoadProcess(int IN_Step)
 		}
 		case 3:
 		{
+			FinishJob();
+			FPlatformProcess::Sleep(0.05);
+			break;
+		}
+		case 4:
+		{
 			DisconnectFromServer();
 			FPlatformProcess::Sleep(0.1);
 			bFinished = true;
 			break;
 		}
 	}
+}
+
+void 
+
+void FClientWorker::DisconnectFromServer()
+{
+	listenSocket = nullptr;
+	delete listenSocket;
+	step++;
+}
+
+void FClientWorker::WaitStatus()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Wait for status job"));
+	SendDataToServer(cmd_cli_waiting_for_statuses);
+
+	UE_LOG(LogTemp, Warning, TEXT("Wait for status COMPLETE JOB"));
+	WaitForMessage(cmd_cli_job_completed);
+	step++;
 }
 
 bool FClientWorker::ConnectServer()
