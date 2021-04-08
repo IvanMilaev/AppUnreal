@@ -5,14 +5,21 @@
 #include "Dom/JsonObject.h"
 
 UENUM(BlueprintType)
+enum EJobType
+{
+    ASSET_HOT_LOAD = 0 UMETA(DisplayName = "Find asset(s) by ID, make pak file and load it to the game")
+};
+
+UENUM(BlueprintType)
 enum EWorkerStatus
 {
     ThreadStarted = 0 UMETA(DisplayName = "Worker Thread started"),
     ClientConnected = 1 UMETA(DisplayName = "Worker client connected to server"),
-    DataPrepStarted = 2 UMETA(DisplayName = "Preparing CAD Data"),
+    JobStarted = 2 UMETA(DisplayName = "Job started")
+   /* DataPrepStarted = 2 UMETA(DisplayName = "Preparing CAD Data"),
     ImportComplete = 3 UMETA(DisplayName = "Cooking Assets"),
     CookComplete = 4 UMETA(DisplayName = "Copying Assets"),
-    CopyComplete = 5 UMETA(DisplayName = "Importing Assets")
+    CopyComplete = 5 UMETA(DisplayName = "Importing Assets")*/
 };
 
 class  FClientWorker : public FRunnable
@@ -30,10 +37,12 @@ class  FClientWorker : public FRunnable
     FThreadSafeCounter StopTaskCounter;
 
 private:
+    FString cmd_server_confirmation, cmd_cli_prepare_for_job, cmd_cli_start_job, cmd_cli_cancel_job;
     FSocket* listenSocket;
     FString server_adress;
     FString job_description;
     TSharedPtr<FJsonObject> json_job_description;
+    EJobType job_type;
     int32 port;
 
     bool bFinished;
@@ -42,9 +51,14 @@ private:
     //Constructor
     FClientWorker(const FString& IN_IPAdress, const int IN_Port);
 
+    bool SendDataToServer(FString IN_Data);
+    bool WaitForMessage(FString msg);
+    bool isSocketWorks();
     bool ParseJobDescriptionToJSON();
     bool ConnectServer();
     void SendJobToServer();
+    void ProcessJob(int IN_Step);
+    void AssetHotLoadProcess(int IN_Step);
 
 public:
     bool IsFinished() const;
@@ -59,6 +73,7 @@ public:
     void Start();
 
     bool ShutDown();
-    bool LaunchNewJob(const FString& IN_JobDescription);
+    bool LaunchNewJob(EJobType& IN_JobType, const FString& IN_JobDescription);
+    
 
 }
