@@ -62,8 +62,6 @@ class UHotLoadAssetManagerBPLibrary : public UBlueprintFunctionLibrary
 	static bool IsWithEditor();
 
 
-	UFUNCTION(BlueprintPure, Category = "Utilities")
-	static TSharedPtr<FJsonObject> ParseJSONString(FString& IN_JSONString);
 	
 
 private:

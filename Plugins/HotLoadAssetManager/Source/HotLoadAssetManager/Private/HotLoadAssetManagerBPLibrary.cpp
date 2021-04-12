@@ -5,7 +5,11 @@
 #include "IPlatformFilePak.h"
 #include "AssetRegistryModule.h"
 
+UHotLoadAssetManagerBPLibrary::UHotLoadAssetManagerBPLibrary(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer)
+{
 
+}
 
 bool UHotLoadAssetManagerBPLibrary::DirectoryExists(const FString& InPath)
 {
@@ -186,15 +190,6 @@ bool UHotLoadAssetManagerBPLibrary::IsWithEditor()
 #endif
 }
 
-
-TSharedPtr<FJsonObject> UHotLoadAssetManagerBPLibrary::ParseJSONString(FString& IN_JSONString)
-{
-	TSharedPtr<FJsonObject> JsonObject = MakeShareable(new FJsonObject());
-	TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(IN_JSONString);
-	FJsonSerializer::Deserialize(JsonReader, JsonObject);
-
-	return JsonObject;
-}
 
 
 

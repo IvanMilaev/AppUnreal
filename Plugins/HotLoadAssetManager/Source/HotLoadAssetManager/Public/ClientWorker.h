@@ -2,7 +2,7 @@
 #pragma once
 
 #include "Networking.h"
-#include "Dom/JsonObject.h"
+
 
 UENUM(BlueprintType)
 enum EJobType
@@ -14,8 +14,9 @@ UENUM(BlueprintType)
 enum EWorkerStatus
 {
     ThreadStarted = 0 UMETA(DisplayName = "Worker Thread started"),
-    ClientConnected = 1 UMETA(DisplayName = "Worker client connected to server"),
-    JobStarted = 2 UMETA(DisplayName = "Job started")
+    NetworkUtilsClientConnected = 1 UMETA(DisplayName = " Network Utils Client connected to server"),
+    ClientConnected = 2 UMETA(DisplayName = "Worker client connected to server"),
+    JobStarted = 3 UMETA(DisplayName = "Job started")
    /* DataPrepStarted = 2 UMETA(DisplayName = "Preparing CAD Data"),
     ImportComplete = 3 UMETA(DisplayName = "Cooking Assets"),
     CookComplete = 4 UMETA(DisplayName = "Copying Assets"),
@@ -36,9 +37,12 @@ class  FClientWorker : public FRunnable
     /** Stop this thread? Uses Thread Safe Counter */
     FThreadSafeCounter StopTaskCounter;
 
+    
+    
+
 private:
-    FString cmd_server_confirmation, cmd_cli_prepare_for_job, cmd_cli_start_job, cmd_cli_cancel_job, cmd_cli_waiting_for_statuses,
-        cmd_cli_job_completed;
+    FString cmd_server_confirmation, cmd_cli_prepare_for_job, cmd_cli_start_job, cmd_cli_cancel_job, cmd_cli_waiting_for_statuses;
+    FString  cmd_cli_job_completed;
     FSocket* listenSocket;
     FString server_adress;
     FString job_description;
@@ -50,8 +54,7 @@ private:
     int step;
 
     //Constructor
-    FClientWorker(const FString& IN_IPAdress, const int IN_Port);
-
+    
     bool SendDataToServer(FString IN_Data);
     bool WaitForMessage(FString msg);
     void WaitStatus();
@@ -63,11 +66,12 @@ private:
     void ProcessJob(int IN_Step);
     void AssetHotLoadProcess(int IN_Step);
     void FinishJob();
+   
 
 public:
+    FClientWorker(const FString& IN_IPAdress, const int IN_Port);
+    virtual ~FClientWorker();
     bool IsFinished() const;
-
-
     FCLientStatusUpdateEvent StatusUpdateEvent;
     // Begin FRunnable interface. 
     virtual bool Init();
@@ -75,9 +79,7 @@ public:
     virtual void Stop();
     // End FRunnable interface
     void Start();
-
     bool ShutDown();
-    bool LaunchNewJob(EJobType& IN_JobType, const FString& IN_JobDescription);
-    
+    bool LaunchNewJob(EJobType IN_JobType, const FString& IN_JobDescription);
 
-}
+};

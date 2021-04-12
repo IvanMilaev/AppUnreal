@@ -18,6 +18,16 @@ FClientWorker::FClientWorker(const FString& IN_IPAdress, const int IN_Port)
 	cmd_cli_job_completed = FString("JOB_COMPLETED");
 }
 
+FClientWorker::~FClientWorker()
+{
+	delete Thread;
+	Thread = NULL;
+	if (isSocketWorks())
+	{
+		DisconnectFromServer();
+	}
+}
+
 void FClientWorker::Start()
 {
 	const int32 BufferSize = 16 * 1024 * 1024;
@@ -35,14 +45,14 @@ void FClientWorker::Start()
 	Thread = FRunnableThread::Create(this, TEXT("FClientWorker"), 0, TPri_BelowNormal);
 }
 
-bool FClientWorker::LaunchNewJob(EJobType& IN_JobType, const FString& IN_JobDescription)
+bool FClientWorker::LaunchNewJob(EJobType IN_JobType, const FString& IN_JobDescription)
 {
 	job_type = IN_JobType;
 	job_description = IN_JobDescription;
 	ParseJobDescriptionToJSON();
 	step = 0;
 	Run();
-	
+	return true;
 
 }
 
@@ -63,45 +73,59 @@ void FClientWorker::AssetHotLoadProcess(int IN_Step)
 	{
 		case 0:
 		{
-			ConnectServer();
+			step = ConnectServer() ? step + 1 : -1;
 			FPlatformProcess::Sleep(0.1);
 			break;
 		}
 		case 1:
 		{
 			SendJobToServer();
+			step++;
 			FPlatformProcess::Sleep(0.05);
 			break;
 		}
 		case 2:
 		{
 			WaitStatus();
+			step++;
 			FPlatformProcess::Sleep(0.05);
 			break;
 		}
 		case 3:
 		{
-			FinishJob();
-			FPlatformProcess::Sleep(0.05);
+			DisconnectFromServer();
+			step++;
+			FPlatformProcess::Sleep(0.1);
 			break;
 		}
 		case 4:
 		{
-			DisconnectFromServer();
-			FPlatformProcess::Sleep(0.1);
-			bFinished = true;
+			FinishJob();
+			step++;
+			FPlatformProcess::Sleep(0.05);
 			break;
 		}
+		default:
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Job process failed..."));
+			FinishJob();
+			FPlatformProcess::Sleep(0.05);
+			break;
+		}
+		
 	}
 }
 
-void 
+void FClientWorker::FinishJob()
+{
+	bFinished = true;
+}
 
 void FClientWorker::DisconnectFromServer()
 {
 	listenSocket = nullptr;
 	delete listenSocket;
-	step++;
+	
 }
 
 void FClientWorker::WaitStatus()
@@ -111,13 +135,13 @@ void FClientWorker::WaitStatus()
 
 	UE_LOG(LogTemp, Warning, TEXT("Wait for status COMPLETE JOB"));
 	WaitForMessage(cmd_cli_job_completed);
-	step++;
+	
 }
 
 bool FClientWorker::ConnectServer()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Connect server:"));
-	if (!isSocketWorks()) return;
+	if (!isSocketWorks()) return false;
 
 	FIPv4Address ip(127, 0, 0, 1);
 	FIPv4Address::Parse(server_adress, ip);
@@ -133,7 +157,7 @@ bool FClientWorker::ConnectServer()
 		{
 			UE_LOG(LogTemp, Warning, TEXT("Connected to server"));
 			StatusUpdateEvent.Broadcast(EWorkerStatus::ClientConnected);
-			step++;
+			
 			return true;
 		}
 		else
@@ -165,7 +189,7 @@ void FClientWorker::SendJobToServer()
 		if (WaitForMessage(cmd_server_confirmation))
 		{
 			StatusUpdateEvent.Broadcast(EWorkerStatus::JobStarted);
-			step++;
+			
 		}
 	}
 }
@@ -196,6 +220,11 @@ uint32 FClientWorker::Run()
 
 
 	return 0;
+}
+
+void FClientWorker::Stop()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Stop..."));
 }
 
 bool FClientWorker::Init()
