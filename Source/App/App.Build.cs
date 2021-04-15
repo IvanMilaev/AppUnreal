@@ -8,7 +8,7 @@ public class App : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HTTP", "Json", "HotLoadAssetManager" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HTTP", "Json", "AssetManager_DDDSource" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

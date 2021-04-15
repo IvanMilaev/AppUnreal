@@ -2,22 +2,22 @@
 
 using UnrealBuildTool;
 
-public class FS_WebSocket : ModuleRules
+public class AssetManager_DDDSource : ModuleRules
 {
-	public FS_WebSocket(ReadOnlyTargetRules Target) : base(Target)
+	public AssetManager_DDDSource(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
 				// ... add public include paths required here ...
-                
 			}
 			);
 				
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
+				//"AssetManager_DDDSource/Private"
 				// ... add other private include paths required here ...
 			}
 			);
@@ -27,9 +27,6 @@ public class FS_WebSocket : ModuleRules
 			new string[]
 			{
 				"Core",
-				"WebSockets",
-                "Json",
-                "JsonUtilities"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -41,7 +38,11 @@ public class FS_WebSocket : ModuleRules
 				"CoreUObject",
 				"Engine",
 				"Slate",
-				"SlateCore"
+				"SlateCore",
+				"Sockets",
+				"Networking",
+				"PakFile"
+				
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

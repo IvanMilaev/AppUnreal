@@ -47,6 +47,14 @@
 		{
 			"Name": "HotLoadHelpers",
 			"Enabled": false
+		},
+		{
+			"Name": "FS_WebSocket",
+			"Enabled": false
+		},
+		{
+			"Name": "HotLoadAssetManager",
+			"Enabled": false
 		}
 	]
 }

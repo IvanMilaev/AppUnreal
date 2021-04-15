@@ -2,7 +2,7 @@
 	"FileVersion": 3,
 	"Version": 1,
 	"VersionName": "1.0",
-	"FriendlyName": "FS_WebSocket",
+	"FriendlyName": "AssetManager_DDDSource",
 	"Description": "",
 	"Category": "Other",
 	"CreatedBy": "",
@@ -10,13 +10,13 @@
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "",
-	"CanContainContent": true,
+	"CanContainContent": false,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
 	"Modules": [
 		{
-			"Name": "FS_WebSocket",
+			"Name": "AssetManager_DDDSource",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}
