@@ -1,0 +1,108 @@
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 54676)
+received "GET / HTTP/1.1
+Host: 127.0.0.1:10000
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36
+Upgrade: websocket
+Origin: chrome-extension://omalebghpgejjiaoknljcfmglgbpocdp
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Sec-WebSocket-Key: ZymRh8YmtEF3Zh4/lVybaA==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+"
+received unknown payload
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 9933) port 9933 
+waiting for a connection 
+connection from ('127.0.0.1', 55015)
+received "GET / HTTP/1.1
+Host: 127.0.0.1:9933
+Connection: Upgrade
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36
+Upgrade: websocket
+Origin: chrome-extension://omalebghpgejjiaoknljcfmglgbpocdp
+Sec-WebSocket-Version: 13
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Sec-WebSocket-Key: /IQnKjzPgyShrRXZ55pdZQ==
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+
+"
+received unknown payload
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 9933) port 9933 
+waiting for a connection 
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 63837)
+received "KILL_SERVER"
+stop server 
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 63845)
+received "KILL_SERVER"
+stop server 
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 63886)
+received "KILL_SERVER"
+stop server 
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 64416)
+received "KILL_SERVER"
+stop server 
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+unziping archive D:/ue/App/Script/AssetsManagement/Template.zip to folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 64346)
+received "KILL_SERVER"
+stop server 
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+deleting existing template folder D:/ue/App/Script/AssetsManagement/Template
+unziping archive D:/ue/App/Script/AssetsManagement/Template.zip to folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 64455)
+received "KILL_SERVER"
+stop server 
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+deleting existing template folder D:/ue/App/Script/AssetsManagement/Template
+unziping archive D:/ue/App/Script/AssetsManagement/Template.zip to folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 64589)
+received "KILL_SERVER"
+stop server 
+python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
+server folder D:/ue/App/Script/AssetsManagement
+unziping archive D:/ue/App/Script/AssetsManagement/Template.zip to folder D:/ue/App/Script/AssetsManagement
+starting up on ('localhost', 10000) port 10000 
+waiting for a connection 
+connection from ('127.0.0.1', 64627)
+received "KILL_SERVER"
+stop server 

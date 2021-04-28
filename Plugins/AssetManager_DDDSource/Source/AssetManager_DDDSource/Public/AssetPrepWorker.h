@@ -9,6 +9,7 @@ enum EAssetPrepWorkerCommand
     KILL_SERVER  UMETA(DisplayName = "Kill server process"),
     WAITING_FOR_STATUSES UMETA(DisplayName = "Waiting for statuses from server"),
     SEND_JOB_TO_SERVER UMETA(DisplayName = "Send job to server"),
+    START_JOB UMETA(DisplayName = "Start Asset preparation job"),
     JOB_COMPLETED UMETA(DisplayName = "Job completed")
 };
 
