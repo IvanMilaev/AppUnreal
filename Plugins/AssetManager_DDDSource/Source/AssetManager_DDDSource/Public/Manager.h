@@ -1,6 +1,7 @@
 #pragma once
 
 #include "GameFramework/Actor.h"
+#include "AssetPrepWorker.h"
 #include "Manager.generated.h"
 
 UENUM(BlueprintType)
@@ -35,10 +36,18 @@ class AManager : public AActor {
 		UFUNCTION(BlueprintPure, Category = "Asset Manager 3DSource")
 		bool DoJob(FJobDescription IN_Job);
 
-		UFUNCTION(BlueprintPure, Category = "Asset Manager 3DSource")
+		UFUNCTION(BlueprintCallable, Category = "Asset Manager 3DSource")
 		bool Test();
+ 
+		UFUNCTION(BlueprintPure, Category = "Asset Manager 3DSource")
+		EAssetPrepWorkerStatus getCurrentStatus();
+
+		void UpdateStatus(EAssetPrepWorkerStatus newStatus);
 
 
 		AManager();
 		~AManager();
+
+	private:
+		EAssetPrepWorkerStatus CurrentStatus;
 };

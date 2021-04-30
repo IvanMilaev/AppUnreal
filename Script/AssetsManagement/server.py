@@ -29,6 +29,21 @@ zip_ref = zipfile.ZipFile(template_project_zip, 'r')
 zip_ref.extractall(server_folder)
 zip_ref.close()
 
+asset_library_directory = "d:/ue/AssetLibrary"
+output_folder = "d:/temp"
+project_name = "AutomatedImport"
+content_folder = "/Game/Hotloadimport"
+editor_directory = '/'.join([template_project_folder,'content',content_folder])
+cooked_content_directory = template_project_folder+'/Saved/Cooked/WindowsNoEditor/Template/Content'
+cooked_directory = cooked_content_directory + '/' + content_folder
+output_content_directory = '/'.join([output_folder,project_name])
+output_editor_directory = '/'.join([output_content_directory,'editor/content'])
+output_cooked_directory = '/'.join([output_content_directory,'cooked/content'])
+
+
+def test_success(line):
+    word_success = 'Success -'
+    return line.find(word_success) >=0
 
 def execute_and_print_with_check_success(args):
     log_file.write(' '.join(args)+'\n')
@@ -45,16 +60,13 @@ def execute_and_print_with_check_success(args):
     # "Content Folder": "/Game/Import",
     #"Project Name": "AutomatedImport"
 
+def import_asset(asset_name):
+    shutil.copytree(asset_library_directory+'/'+asset_name, editor_directory)
+    
+
 def do_job(socket):
-    output_folder = "d:/temp"
-    project_name = "AutomatedImport"
-    content_folder = "/Game/Hotloadimport"
-    editor_directory = '/'.join([template_project_folder,'content',content_folder])
-    cooked_content_directory = template_project_folder+'/Saved/Cooked/WindowsNoEditor/Template/Content'
-    cooked_directory = cooked_content_directory + '/' + content_folder
-    output_content_directory = '/'.join([output_folder,project_name])
-    output_editor_directory = '/'.join([output_content_directory,'editor/content'])
-    output_cooked_directory = '/'.join([output_content_directory,'cooked/content'])
+    import_asset("test_asset")
+
     log_file.write('Cooking assets\n')
      # remove existing cooked content if any
     if os.path.exists(cooked_directory):
@@ -104,6 +116,7 @@ if len(sys.argv) == 2:
     port = int(sys.argv[1])
 
 server_address = ('localhost', port)
+log_file.write('try starting up on %s port %s \n' % (server_address, port))
 
 # Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -126,6 +139,7 @@ cmd_waiting_for_statuses = 'WAITING_FOR_STATUSES'
 cmd_send_job_to_server = 'SEND_JOB_TO_SERVER'
 cmd_start_job = 'START_JOB',
 cmd_job_completed = 'JOB_COMPLETED'
+cmd_test = "TEST_COMMAND"
 
 
 
@@ -148,16 +162,24 @@ while not b_stop_server:
                     log_file.write('received echo\n')
                     connection.sendall(cmd_echo)
 
+                elif data.startswith(cmd_test):
+                    print >>sys.stderr, 'received echo"%s"' % data
+                    import_asset('test_asset')
+                    connection.sendall(cmd_test)
+
                 elif data.startswith(cmd_send_job_to_server):
                     print >>sys.stderr, 'received new job"%s"' % data
                     log_file.write('received new job \n')
                     connection.sendall(cmd_confirmed)
+                    do_job(connection)
+                    connection.sendall(cmd_job_completed)
 
                 elif data.startswith(cmd_start_job):
                     print >>sys.stderr, 'Starting job..."%s"' % data
                     log_file.write('Starting job \n')
                     connection.sendall(cmd_confirmed)
                     do_job(connection)
+                    connection.sendall(cmd_job_completed)
 
 
                 elif data.startswith(cmd_kill_server):

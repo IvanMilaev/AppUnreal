@@ -84,7 +84,8 @@ public:
     // End FRunnable interface
     void Start();
 
-    static FAssetPrepWorker* Test();
+    static FAssetPrepWorker* RunJob();
+   
 
     /** Makes sure this thread has stopped properly */
     void EnsureCompletion();

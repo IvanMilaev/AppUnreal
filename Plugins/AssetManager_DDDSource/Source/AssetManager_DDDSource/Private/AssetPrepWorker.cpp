@@ -4,11 +4,12 @@
 FAssetPrepWorker* FAssetPrepWorker::Runnable = NULL;
 FAssetPrepWorker::FAssetPrepWorker(const FString& IN_IPAdress, const int IN_Port)
 {
+	UE_LOG(LogTemp, Display, TEXT("Creating new worker"));
 	server_address = IN_IPAdress;
 	port = IN_Port;
 	working_directory = FPaths::ProjectUserDir() + "Script/AssetsManagement";
 	python_script_filename = "server.py";
-	bFinished = true;
+	bFinished = false;
 	Thread = NULL;
 	listenSocket = nullptr;
 	step = 0;
@@ -36,6 +37,7 @@ bool FAssetPrepWorker::Init()
 
 void FAssetPrepWorker::Start()
 {
+	UE_LOG(LogTemp, Display, TEXT("Starting worker"));
 	if (!bFinished && Thread != NULL)
 		EnsureCompletion();
 	StopTaskCounter.Reset();
@@ -55,6 +57,8 @@ void FAssetPrepWorker::Start()
 	Thread = FRunnableThread::Create(this, TEXT("FClientWorker"), 0, TPri_BelowNormal);
 }
 
+
+
 uint32 FAssetPrepWorker::Run()
 {
 	step = 0;
@@ -65,6 +69,8 @@ uint32 FAssetPrepWorker::Run()
 	{
 		switch (step)
 		{
+
+		
 		case 0:
 		{
 			LaunchServer();
@@ -118,6 +124,7 @@ void FAssetPrepWorker::LaunchServer()
 
 	UE_LOG(LogTemp, Warning, TEXT("Working Directory: %s"), *working_directory);
 	UE_LOG(LogTemp, Warning, TEXT("Launch server: %s"), *serverPath);
+	UE_LOG(LogTemp, Warning, TEXT("cmd: %s"), *attributes);
 
 	server_handle = FPlatformProcess::CreateProc(*serverPath, *attributes, true, false, false, nullptr, 0, *working_directory, nullptr);
 
@@ -134,7 +141,11 @@ void FAssetPrepWorker::LaunchServer()
 void FAssetPrepWorker::ConnectServer()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Connect server:"));
-	if (!IsSocketWorks()) return;
+	if (listenSocket == nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Socket not initialized"));
+		return;
+	}
 
 	FIPv4Address ip(127, 0, 0, 1);
 	FIPv4Address::Parse(server_address, ip);
@@ -160,6 +171,7 @@ void FAssetPrepWorker::ConnectServer()
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Connect Fail"));
 	}
+	
 }
 
 void FAssetPrepWorker::SendJobServer()
@@ -175,6 +187,7 @@ void FAssetPrepWorker::SendJobServer()
 
 void FAssetPrepWorker::KillServer()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Killing server"));
 	SendCommandToServer(EAssetPrepWorkerCommand::KILL_SERVER);
 	WaitForMessage(EAssetPrepWorkerCommand::KILL_SERVER);
 }
@@ -183,15 +196,16 @@ void FAssetPrepWorker::WaitStatus()
 	SendCommandToServer(EAssetPrepWorkerCommand::WAITING_FOR_STATUSES);
 	UE_LOG(LogTemp, Warning, TEXT("Wait for Finish Assetprep"));
 	WaitForMessage(EAssetPrepWorkerCommand::JOB_COMPLETED);
+	StatusUpdateEvent.Broadcast(EAssetPrepWorkerStatus::JobCompleted);
 	step++;
 }
 
 
-FAssetPrepWorker* FAssetPrepWorker::Test()
+FAssetPrepWorker* FAssetPrepWorker::RunJob()
 {
-	
+	UE_LOG(LogTemp, Warning, TEXT("Lunch test in worker"));
 	FString address = FString("127.0.0.1");
-	int prt = 9933;
+	int prt = 10000;
 	if (!Runnable && FPlatformProcess::SupportsMultithreading())
 		Runnable = new FAssetPrepWorker( address, prt);
 	Runnable->Start();
@@ -265,7 +279,7 @@ bool FAssetPrepWorker::IsSocketWorks()
 
 	if (listenSocket->GetConnectionState() == ESocketConnectionState::SCS_Connected)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Client already connected"));
+		//UE_LOG(LogTemp, Warning, TEXT("Client already connected"));
 		return true;
 	}
 	else {

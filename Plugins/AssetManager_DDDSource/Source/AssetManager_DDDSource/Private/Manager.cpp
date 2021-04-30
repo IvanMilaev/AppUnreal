@@ -1,5 +1,5 @@
 #include "Manager.h"
-#include "AssetPrepWorker.h"
+
 #include "AssetManager_DDDSource.h"
 
 
@@ -25,8 +25,23 @@ bool AManager::DoJob(FJobDescription IN_Job)
 
 bool AManager::Test()
 {
-	//FAssetPrepWorker* thread = FAssetPrepWorker::Test();
+	UE_LOG(LogTemp, Display, TEXT("Launch test worker"));
+	FAssetPrepWorker* thread = FAssetPrepWorker::RunJob();
+	thread->StatusUpdateEvent.Clear();
+	thread->StatusUpdateEvent.AddUObject(this, &AManager::UpdateStatus);
+	UE_LOG(LogTemp, Display, TEXT("Thread..."));
+
 	return true;
+}
+
+EAssetPrepWorkerStatus AManager::getCurrentStatus()
+{
+	return CurrentStatus;
+}
+
+void AManager::UpdateStatus(EAssetPrepWorkerStatus newStatus)
+{
+	CurrentStatus = newStatus;
 }
 
 
