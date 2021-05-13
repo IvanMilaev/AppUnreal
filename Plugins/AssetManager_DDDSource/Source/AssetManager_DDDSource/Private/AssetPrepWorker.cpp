@@ -2,11 +2,12 @@
 #include "AssetPrepWorker.h"
 
 FAssetPrepWorker* FAssetPrepWorker::Runnable = NULL;
-FAssetPrepWorker::FAssetPrepWorker(const FString& IN_IPAdress, const int IN_Port)
+FAssetPrepWorker::FAssetPrepWorker(const FString& IN_IPAdress, const int IN_Port, const FString& IN_Job)
 {
 	UE_LOG(LogTemp, Display, TEXT("Creating new worker"));
 	server_address = IN_IPAdress;
 	port = IN_Port;
+	job_description = IN_Job;
 	working_directory = FPaths::ProjectUserDir() + "Script/AssetsManagement";
 	python_script_filename = "server.py";
 	bFinished = false;
@@ -176,7 +177,7 @@ void FAssetPrepWorker::ConnectServer()
 
 void FAssetPrepWorker::SendJobServer()
 {
-	SendCommandToServer(EAssetPrepWorkerCommand::SEND_JOB_TO_SERVER);
+	SendCommandToServer(EAssetPrepWorkerCommand::SEND_JOB_TO_SERVER, job_description);
 	UE_LOG(LogTemp, Warning, TEXT("Wait for confirm"));
 	if (WaitForMessage(EAssetPrepWorkerCommand::CONFIRMED))
 	{
@@ -201,13 +202,14 @@ void FAssetPrepWorker::WaitStatus()
 }
 
 
-FAssetPrepWorker* FAssetPrepWorker::RunJob()
+FAssetPrepWorker* FAssetPrepWorker::RunJob(FString IN_Job)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Lunch test in worker"));
+	
+	UE_LOG(LogTemp, Warning, TEXT("Lunch job in worker, job: %s"), *IN_Job);
 	FString address = FString("127.0.0.1");
 	int prt = 10000;
 	if (!Runnable && FPlatformProcess::SupportsMultithreading())
-		Runnable = new FAssetPrepWorker( address, prt);
+		Runnable = new FAssetPrepWorker( address, prt, IN_Job);
 	Runnable->Start();
 	return Runnable;
 }
@@ -224,11 +226,11 @@ void FAssetPrepWorker::EnsureCompletion()
 	}
 }
 
-bool FAssetPrepWorker::SendCommandToServer(EAssetPrepWorkerCommand command)
+bool FAssetPrepWorker::SendCommandToServer(EAssetPrepWorkerCommand command, FString payload)
 {
 	FString cmd = UEnum::GetValueAsString<EAssetPrepWorkerCommand>(command);
 	
-	TCHAR* serializedChar = cmd.GetCharArray().GetData();
+	TCHAR* serializedChar = (cmd + "|" + payload).GetCharArray().GetData();
 	int32 size = FCString::Strlen(serializedChar);
 	int32 sent = 0;
 	return listenSocket->Send((uint8*)TCHAR_TO_UTF8(serializedChar), size, sent);

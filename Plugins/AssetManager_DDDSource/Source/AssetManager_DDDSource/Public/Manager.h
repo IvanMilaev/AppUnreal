@@ -34,7 +34,7 @@ class AManager : public AActor {
 		bool Init();
 
 		UFUNCTION(BlueprintPure, Category = "Asset Manager 3DSource")
-		bool DoJob(FJobDescription IN_Job);
+		bool DoJob(FString IN_Job);
 
 		UFUNCTION(BlueprintCallable, Category = "Asset Manager 3DSource")
 		bool Test();

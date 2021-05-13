@@ -59,11 +59,12 @@ class FAssetPrepWorker: public FRunnable
         void KillServer();
         bool WaitForMessage(EAssetPrepWorkerCommand cmd);
 
-        bool SendCommandToServer(EAssetPrepWorkerCommand command);
+
+        bool SendCommandToServer(EAssetPrepWorkerCommand command, FString payload = "");
 
         //~~~ Thread Core Functions ~~~
         //Constructor
-        FAssetPrepWorker(const FString& IN_IPAdress, const int IN_Port);
+        FAssetPrepWorker(const FString& IN_IPAdress, const int IN_Port, const FString& IN_Job);
 
 
         bool IsSocketWorks();
@@ -84,7 +85,7 @@ public:
     // End FRunnable interface
     void Start();
 
-    static FAssetPrepWorker* RunJob();
+    static FAssetPrepWorker* RunJob(FString IN_Job);
    
 
     /** Makes sure this thread has stopped properly */

@@ -39,7 +39,10 @@ class UHotLoadBPLibraryUtils : public UBlueprintFunctionLibrary
 	static bool RegisterMountPointv2(const FString & GamePath, const FString & InPath);
 
 	UFUNCTION(BlueprintPure, Category = "File Helpers Wrapper")
-		static bool MountExternalPak(const FString & PakPath, const FString & ContentFolderMountPoint);
+	static bool MountExternalPak(const FString & PakPath, const FString & ContentFolderMountPoint);
+
+	UFUNCTION(BlueprintCallable, Category = "HotLoadAsset")
+	static void AsyncSpawnActor(UObject* WorldContextObject, TAssetSubclassOf<AActor> AssetPtr, FTransform SpawnTransform);
 
 	UFUNCTION(BlueprintPure, Category = "File Helpers Wrapper")
 	static bool Test(const FString & InPath);
@@ -47,7 +50,13 @@ class UHotLoadBPLibraryUtils : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintPure, Category = "Utilities")
 	static bool IsWithEditor();
 
+	UFUNCTION(BlueprintCallable, Category = "File Helpers Wrapper")
+	static void AsyncAssetLoadTest();
+
+	static void OnAsyncSpawnActorComplete(UObject* WorldContextObject, FTransform SpawnTransform);
+
 	private:
 		static bool MatchesExtension(const FString& FileName, const TArray<FString>& Extensions);
+
 	
 };

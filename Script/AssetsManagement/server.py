@@ -8,6 +8,7 @@ import subprocess
 
 config= open('config.json').read()
 cfg=json.loads(config)
+job_description = {}
 print cfg
 
 log_file = open('server.log','a')
@@ -169,6 +170,7 @@ while not b_stop_server:
 
                 elif data.startswith(cmd_send_job_to_server):
                     print >>sys.stderr, 'received new job"%s"' % data
+                    job_description = json.loads(data.split('|')[1])
                     log_file.write('received new job \n')
                     connection.sendall(cmd_confirmed)
                     do_job(connection)

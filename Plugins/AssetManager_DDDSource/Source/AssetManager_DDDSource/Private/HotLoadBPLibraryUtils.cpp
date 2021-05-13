@@ -1,6 +1,10 @@
 #include "HotLoadBPLibraryUtils.h"
 #include "IPlatformFilePak.h"
+#include "Engine/StreamableManager.h"
 #include "AssetRegistryModule.h"
+#include "Engine/AssetManager.h"
+#include "Engine/ObjectLibrary.h"
+#include "Engine/StaticMesh.h"
 
 
 
@@ -144,6 +148,24 @@ bool UHotLoadBPLibraryUtils::MountExternalPak(const FString & PakPath, const FSt
 		UE_LOG(LogTemp, Log, TEXT("registering mount point %s at %s"), *pakMountPoint, *ContentFolderMountPoint);
 		TArray<FString> FileList;
 		PakPlatformFile->FindFilesRecursively(FileList, *pakMountPoint, TEXT("uasset"));
+		FStreamableManager& AssetLoad = UAssetManager::GetStreamableManager();
+		FString AssetName = FileList[3];
+		FString AssetShortName = FPackageName::GetShortName(AssetName);
+		FString LeftStr;
+		FString RightStr;
+		AssetShortName.Split(TEXT("."), &LeftStr, &RightStr);
+		AssetName = TEXT("/Game/") + LeftStr + TEXT(".") + LeftStr;
+		FStringAssetReference Reference = AssetName;
+
+		UObject* LoadObject = AssetLoad.LoadSynchronous(Reference);
+		if (LoadObject != nullptr)
+		{
+			UE_LOG(LogClass, Log, TEXT("Object load Success... $s"), *LoadObject->GetDetailedInfo());
+		}
+		else
+		{
+			UE_LOG(LogClass, Error, TEXT("Can't load asset..."));
+		}
 		for (auto File : FileList)
 		{
 			UE_LOG(LogTemp, Log, TEXT("find file  %s"), *File);
@@ -172,6 +194,50 @@ bool UHotLoadBPLibraryUtils::MountExternalPak(const FString & PakPath, const FSt
 		UE_LOG(LogTemp, Error, TEXT("Mount failed: %s"), *PakPath);
 	}
 	return true;
+}
+
+
+
+void UHotLoadBPLibraryUtils::AsyncSpawnActor(UObject* WorldContextObject, TAssetSubclassOf<AActor> AssetPtr, FTransform SpawnTransform)
+{
+	//FStreamableManager& Streamable = UGameGlobals::Get().StreamableManager;
+
+	FSoftObjectPath pathobject;
+	pathobject = FSoftObjectPath(TEXT("'/Game/Hotloadimport/SM_Totinos.SM_Totinos'"));
+	FStreamableManager& AssetLoad = UAssetManager::GetStreamableManager();
+	AssetLoad.RequestAsyncLoad(pathobject, FStreamableDelegate::CreateStatic(&UHotLoadBPLibraryUtils::OnAsyncSpawnActorComplete, WorldContextObject, SpawnTransform));
+
+
+}
+
+
+
+void UHotLoadBPLibraryUtils::OnAsyncSpawnActorComplete(UObject* WorldContextObject, FTransform SpawnTransform)
+{
+	UE_LOG(LogTemp, Error, TEXT("Loaded: "));
+}
+
+
+void UHotLoadBPLibraryUtils::AsyncAssetLoadTest()
+{
+
+	
+	UObjectLibrary* ObjectLibrary;
+
+	ObjectLibrary = UObjectLibrary::CreateLibrary(UStaticMesh::StaticClass(), false, GIsEditor);
+	ObjectLibrary->AddToRoot();
+	FString path = TEXT("/Game/Hotloadimport");
+	ObjectLibrary->LoadAssetDataFromPath(path);
+	
+	ObjectLibrary->LoadAssetsFromAssetData();
+	TArray<FAssetData> Datas;
+	ObjectLibrary->GetAssetDataList(Datas);
+	
+	UE_LOG(LogTemp, Log, TEXT("there is %i asset in %s"), Datas.Num(), *path);
+	for (auto Data : Datas)
+	{
+		UE_LOG(LogTemp, Log, TEXT("%s"), *Data.PackageName.ToString());
+	}
 }
 
 
