@@ -42,6 +42,12 @@ output_editor_directory = '/'.join([output_content_directory,'editor/content'])
 output_cooked_directory = '/'.join([output_content_directory,'cooked/content'])
 
 
+def updateJobDescription():
+    asset_library_directory = job_description['assetLibrary']
+    output_folder = job_description['preparedPakFolder']
+    project_name = job_description['assetID']
+    content_folder = job_description['contentFolderInGame']
+
 def test_success(line):
     word_success = 'Success -'
     return line.find(word_success) >=0
@@ -66,7 +72,11 @@ def import_asset(asset_name):
     
 
 def do_job(socket):
-    import_asset("test_asset")
+    import_asset(job_description['assetID'])
+    asset_library_directory = job_description['assetLibrary']
+    output_folder = job_description['preparedPakFolder']
+    project_name = job_description['assetID']
+    content_folder = job_description['contentFolderInGame']
 
     log_file.write('Cooking assets\n')
      # remove existing cooked content if any
@@ -170,7 +180,10 @@ while not b_stop_server:
 
                 elif data.startswith(cmd_send_job_to_server):
                     print >>sys.stderr, 'received new job"%s"' % data
+                    log_file.write(data)
                     job_description = json.loads(data.split('|')[1])
+                    print >>sys.stderr, job_description['assetID']
+                    updateJobDescription()
                     log_file.write('received new job \n')
                     connection.sendall(cmd_confirmed)
                     do_job(connection)

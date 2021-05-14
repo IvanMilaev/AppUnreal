@@ -36,6 +36,11 @@ class AManager : public AActor {
 		UFUNCTION(BlueprintPure, Category = "Asset Manager 3DSource")
 		bool DoJob(FString IN_Job);
 
+		
+
+		UFUNCTION(BlueprintCallable, Category = "Asset Manager 3DSource")
+		bool SendMessageToServer(FString message);
+
 		UFUNCTION(BlueprintCallable, Category = "Asset Manager 3DSource")
 		bool Test();
  

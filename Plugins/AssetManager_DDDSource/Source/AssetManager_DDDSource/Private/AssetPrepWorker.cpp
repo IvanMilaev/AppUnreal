@@ -177,6 +177,8 @@ void FAssetPrepWorker::ConnectServer()
 
 void FAssetPrepWorker::SendJobServer()
 {
+	
+	UE_LOG(LogTemp, Warning, TEXT("Send job to server, %s"), *job_description);
 	SendCommandToServer(EAssetPrepWorkerCommand::SEND_JOB_TO_SERVER, job_description);
 	UE_LOG(LogTemp, Warning, TEXT("Wait for confirm"));
 	if (WaitForMessage(EAssetPrepWorkerCommand::CONFIRMED))
@@ -229,8 +231,8 @@ void FAssetPrepWorker::EnsureCompletion()
 bool FAssetPrepWorker::SendCommandToServer(EAssetPrepWorkerCommand command, FString payload)
 {
 	FString cmd = UEnum::GetValueAsString<EAssetPrepWorkerCommand>(command);
-	
-	TCHAR* serializedChar = (cmd + "|" + payload).GetCharArray().GetData();
+	FString data = cmd + "|" + payload;
+	TCHAR* serializedChar = (data).GetCharArray().GetData();
 	int32 size = FCString::Strlen(serializedChar);
 	int32 sent = 0;
 	return listenSocket->Send((uint8*)TCHAR_TO_UTF8(serializedChar), size, sent);
@@ -288,6 +290,17 @@ bool FAssetPrepWorker::IsSocketWorks()
 		return false;
 	}
 }
+
+void  FAssetPrepWorker::Shutdown()
+{
+	if (Runnable)
+	{
+		Runnable->EnsureCompletion();
+		delete Runnable;
+		Runnable = NULL;
+	}
+}
+
 
 bool FAssetPrepWorker::IsThreadFinished()
 {

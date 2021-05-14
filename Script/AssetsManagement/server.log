@@ -1,919 +1,298 @@
 python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
 server folder D:/ue/App/Script/AssetsManagement
+deleting existing template folder D:/ue/App/Script/AssetsManagement/Template
 unziping archive D:/ue/App/Script/AssetsManagement/Template.zip to folder D:/ue/App/Script/AssetsManagement
 try starting up on ('localhost', 10000) port 10000 
 starting up on ('localhost', 10000) port 10000 
 waiting for a connection 
-connection from ('127.0.0.1', 65461)
-received "SEND_JOB_TO_SERVER"
-received new job 
+connection from ('127.0.0.1', 58653)
+received "SEND_JOB_TO_SERVER|{"assetLibrary":"d:/ue/AssetLibrary","assetID":"test_asset","preparedPakFolder":"d:/temp","contentFolderInGame":"/Game/test_asset"}"
+SEND_JOB_TO_SERVER|{"assetLibrary":"d:/ue/AssetLibrary","assetID":"test_asset","preparedPakFolder":"d:/temp","contentFolderInGame":"/Game/test_asset"}received new job 
 Cooking assets
 D:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/UE4Editor-Cmd.exe D:/ue/App/Script/AssetsManagement/Template/Template.uproject -run=cook -targetplatform=WindowsNoEditor -cookall -skipeditorcontent
-[2021.04.29-18.48.26:953][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2021.04.29-18.48.26:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2021.04.29-18.48.26:995][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2021.04.29-18.48.26:995][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2021.04.29-18.48.27:004][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2021.04.29-18.48.27:012][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2021.04.29-18.48.27:019][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2021.04.29-18.48.27:027][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2021.04.29-18.48.27:035][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2021.04.29-18.48.27:042][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2021.04.29-18.48.27:051][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2021.04.29-18.48.27:076][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2021.04.29-18.48.27:076][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2021.04.29-18.48.27:083][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
-[2021.04.29-18.48.27:092][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
-[2021.04.29-18.48.27:101][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
-[2021.04.29-18.48.27:108][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
-[2021.04.29-18.48.27:123][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2021.04.29-18.48.27:123][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2021.04.29-18.48.27:130][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.04.29-18.48.27:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.04.29-18.48.27:147][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.04.29-18.48.27:154][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.04.29-18.48.27:154][  0]LogTargetPlatformManager: Display: Building Assets For WindowsNoEditor
-[2021.04.29-18.48.27:160][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.04.29-18.48.27:517][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2021.04.29-18.48.27:982][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.04.29-18.48.28:057][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ivan/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
-[2021.04.29-18.48.28:069][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.04.29-18.48.28:078][  0]LogDerivedDataCache: Display: Performance to C:/Users/Ivan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=197.15MBs, RandomWriteSpeed=203.01MBs. Assigned SpeedClass 'Local'
-[2021.04.29-18.48.30:032][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.04.29-18.48.30:032][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.04.29-18.48.30:639][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
-[2021.04.29-18.48.30:639][  0]LogCook: Display: Mobile HDR setting 1
-[2021.04.29-18.48.30:640][  0]LogCook: Display: Creating asset registry
-[2021.04.29-18.48.30:856][  0]LogCook: Display: Discovering localized assets for cultures: en
-[2021.04.29-18.48.30:858][  0]LogCook: Display: Unable to read previous cook inisettings for platform WindowsNoEditor invalidating cook
-[2021.04.29-18.48.30:858][  0]LogCook: Display: Clearing all cooked content for platform WindowsNoEditor
-[2021.04.29-18.48.30:878][  0]LogCook: Display: Sandbox cleanup took 0.020 seconds for platforms WindowsNoEditor
-[2021.04.29-18.48.32:307][  0]LogCook: Warning: Unable to find package for cooking /Game/Import/AutomatedImport
-[2021.04.29-18.48.32:307][  0]LogCook: Display: Cooked packages 0 Packages Remain 64 Total 64
-[2021.04.29-18.48.32:308][  0]LogCook: Display: Cook Diagnostics: OpenFileHandles=209, VirtualMemory=622MiB
-[2021.04.29-18.48.32:595][  0]LogCook: Display: Cooked packages 50 Packages Remain 203 Total 253
-[2021.04.29-18.48.33:697][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:698][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:699][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:700][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:701][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:703][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:704][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:705][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:706][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:707][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:708][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:710][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:711][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:712][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:713][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:714][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:715][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:717][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-18.48.33:718][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-18.48.33:719][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-18.48.33:719][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:720][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:720][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-18.48.33:721][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.33:722][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-18.48.33:723][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-18.48.33:724][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-18.48.33:725][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:726][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.33:726][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-18.48.33:727][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.34:019][  0]LogMaterial: Display: Missing cached shader map for material M_Schawk, compiling.
-[2021.04.29-18.48.34:020][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-18.48.34:020][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-18.48.34:021][  0]LogMaterial: Display: Missing cached shader map for material M_PLastic, compiling.
-[2021.04.29-18.48.34:022][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-18.48.34:022][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-18.48.34:105][  0]LogMaterial: Display: Missing cached shader map for material M_Folga, compiling.
-[2021.04.29-18.48.34:106][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-18.48.34:106][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-18.48.34:252][  0]LogCook: Display: Cooked packages 262 Packages Remain 0 Total 262
-[2021.04.29-18.48.34:252][  0]LogCook: Display: Cook Diagnostics: OpenFileHandles=264, VirtualMemory=1466MiB
-[2021.04.29-18.48.34:252][  0]LogCook: Display: Finishing up...
-[2021.04.29-18.48.37:845][  0]LogCook: Display: Saving BulkData manifest(s)...
-[2021.04.29-18.48.37:846][  0]LogCook: Display: Done saving BulkData manifest(s)
-[2021.04.29-18.48.37:847][  0]LogBlueprintCodeGen: Display: Nativization Summary - AnimBP:
-[2021.04.29-18.48.37:848][  0]LogBlueprintCodeGen: Display: Name, Children, Non-empty Functions (Empty Functions), Variables, FunctionUsage, VariableUsage
-[2021.04.29-18.48.37:848][  0]LogBlueprintCodeGen: Display: Nativization Summary - Shared Variables From Graph: 0
-[2021.04.29-18.48.37:884][  0]LogAssetRegistryGenerator: Display: Looking for game openorder in dir D:/ue/App/Script/AssetsManagement/Template/Build/WindowsNoEditor/FileOpenOrder/GameOpenOrder.log
-[2021.04.29-18.48.37:894][  0]LogAssetRegistryGenerator: Display: Saving asset registry.
-[2021.04.29-18.48.37:907][  0]LogAssetRegistryGenerator: Display: Generated asset registry num assets 211, size is 95.86kb
-[2021.04.29-18.48.37:907][  0]LogAssetRegistryGenerator: Display: Done saving asset registry.
-[2021.04.29-18.48.37:928][  0]LogShaderLibrary: Display:
-[2021.04.29-18.48.37:929][  0]LogShaderLibrary: Display: Shader Code Stats: PCD3D_SM5
-[2021.04.29-18.48.37:929][  0]LogShaderLibrary: Display: =================
-[2021.04.29-18.48.37:929][  0]LogShaderLibrary: Display: Unique Shaders: 4025, Total Shaders: 4579, Unique Shadermaps: 293
-[2021.04.29-18.48.37:930][  0]LogShaderLibrary: Display: Unique Shaders Size: 9.15mb, Total Shader Size: 9.94mb
-[2021.04.29-18.48.37:930][  0]LogShaderLibrary: Display: =================
-[2021.04.29-18.48.37:930][  0]LogCook: Display: Cook by the book total time in tick 1.938191s total time 7.291014
-[2021.04.29-18.48.37:931][  0]LogCook: Display: Peak Used virtual 1677 MiB Peak Used physical 1536 MiB
-[2021.04.29-18.48.37:931][  0]LogCook: Display: Hierarchy Timer Information:
-[2021.04.29-18.48.37:931][  0]LogCook: Display:   Root: 0.000s (0)
-[2021.04.29-18.48.37:931][  0]LogCook: Display:     CleanSandbox: 0.020s (1)
-[2021.04.29-18.48.37:932][  0]LogCook: Display:       ProcessingAccessedStrings: 0.005s (1)
-[2021.04.29-18.48.37:932][  0]LogCook: Display:     CollectFilesToCook: 0.146s (1)
-[2021.04.29-18.48.37:932][  0]LogCook: Display:       CookModificationDelegate: 0.000s (1)
-[2021.04.29-18.48.37:932][  0]LogCook: Display:     GenerateLongPackageName: 0.000s (1)
-[2021.04.29-18.48.37:933][  0]LogCook: Display:     TickCookOnTheSide: 1.938s (132)
-[2021.04.29-18.48.37:933][  0]LogCook: Display:       PostLoadPackageFixup: 0.001s (760)
-[2021.04.29-18.48.37:933][  0]LogCook: Display:       LoadPackageForCooking: 0.728s (262)
-[2021.04.29-18.48.37:933][  0]LogCook: Display:       SavingPackages: 1.206s (156)
-[2021.04.29-18.48.37:933][  0]LogCook: Display:         BeginPackageCacheForCookedPlatformData: 0.017s (17)
-[2021.04.29-18.48.37:934][  0]LogCook: Display:         PrecachePlatformDataForNextPackage: 0.470s (261)
-[2021.04.29-18.48.37:934][  0]LogCook: Display:           BeginPackageCacheForCookedPlatformData: 0.470s (245)
-[2021.04.29-18.48.37:934][  0]LogCook: Display:         SaveCookedPackage: 0.702s (262)
-[2021.04.29-18.48.37:934][  0]LogCook: Display:           GEditorSavePackage: 0.695s (213)
-[2021.04.29-18.48.37:935][  0]LogCook: Display:             ConvertingBlueprints: 0.002s (213)
-[2021.04.29-18.48.37:935][  0]LogCook: Display:             VerifyCanCookPackage: 0.001s (211)
-[2021.04.29-18.48.37:935][  0]LogCook: Display:         ClearAllCachedCookedPlatformData: 0.004s (262)
-[2021.04.29-18.48.37:935][  0]LogCook: Display:     FinalizePackageStore: 0.001s (1)
-[2021.04.29-18.48.37:936][  0]LogCook: Display:     GeneratingBlueprintAssets: 0.001s (1)
-[2021.04.29-18.48.37:936][  0]LogCook: Display:     SavingCurrentIniSettings: 0.024s (1)
-[2021.04.29-18.48.37:936][  0]LogCook: Display:       ProcessingAccessedStrings: 0.006s (1)
-[2021.04.29-18.48.37:936][  0]LogCook: Display:     SavingAssetRegistry: 0.056s (1)
-[2021.04.29-18.48.37:936][  0]LogCook: Display:       BuildChunkManifest: 0.007s (1)
-[2021.04.29-18.48.37:937][  0]LogCook: Display:       SaveManifests: 0.014s (1)
-[2021.04.29-18.48.37:937][  0]LogCook: Display:       SaveRealAssetRegistry: 0.014s (1)
-[2021.04.29-18.48.37:937][  0]LogCook: Display:       WriteCookerOpenOrder: 0.002s (1)
-[2021.04.29-18.48.37:937][  0]LogCook: Display: Done!
-[2021.04.29-18.48.37:938][  0]LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-18.48.37:938][  0]LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture.WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-18.48.37:939][  0]LogSavePackage: Display: Took 0.001605s to verify the EDL loading graph.
-[2021.04.29-18.48.37:943][  0]LogCookCommandlet: Display: Misc Cook Stats
-[2021.04.29-18.48.37:943][  0]LogCookCommandlet: Display: ===============
-[2021.04.29-18.48.37:943][  0]LogCookCommandlet: Display: NiagaraShader.Misc
-[2021.04.29-18.48.37:943][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-18.48.37:943][  0]LogCookCommandlet: Display: ShaderCompiler
-[2021.04.29-18.48.37:944][  0]LogCookCommandlet: Display:     BlockingTimeSec=0.000002
-[2021.04.29-18.48.37:944][  0]LogCookCommandlet: Display:     AsyncCompileTimeSec=0.000000
-[2021.04.29-18.48.37:944][  0]LogCookCommandlet: Display:     GlobalBeginCompileShaderTimeSec=0.000000
-[2021.04.29-18.48.37:944][  0]LogCookCommandlet: Display:     GlobalBeginCompileShaderCalls=0
-[2021.04.29-18.48.37:945][  0]LogCookCommandlet: Display:     ProcessAsyncResultsTimeSec=0.000269
-[2021.04.29-18.48.37:945][  0]LogCookCommandlet: Display: GlobalShader.Misc
-[2021.04.29-18.48.37:945][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-18.48.37:945][  0]LogCookCommandlet: Display: MeshMaterial.Misc
-[2021.04.29-18.48.37:946][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-18.48.37:946][  0]LogCookCommandlet: Display: MaterialShader.Misc
-[2021.04.29-18.48.37:946][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-18.48.37:946][  0]LogCookCommandlet: Display: Package.Load
-[2021.04.29-18.48.37:946][  0]LogCookCommandlet: Display:     NumPreloadedDependencies=14
-[2021.04.29-18.48.37:947][  0]LogCookCommandlet: Display:     NumInlineLoads=7
-[2021.04.29-18.48.37:947][  0]LogCookCommandlet: Display:     NumPackagesLoaded=180
-[2021.04.29-18.48.37:947][  0]LogCookCommandlet: Display:     LoadPackageTimeSec=1.117859
-[2021.04.29-18.48.37:947][  0]LogCookCommandlet: Display: CookOnTheFlyServer
-[2021.04.29-18.48.37:947][  0]LogCookCommandlet: Display:     PeakRequestQueueSize=46
-[2021.04.29-18.48.37:948][  0]LogCookCommandlet: Display:     PeakLoadQueueSize=207
-[2021.04.29-18.48.37:948][  0]LogCookCommandlet: Display:     PeakSaveQueueSize=199
-[2021.04.29-18.48.37:948][  0]LogCookCommandlet: Display: Package.Save
-[2021.04.29-18.48.37:948][  0]LogCookCommandlet: Display:     NumPackagesSaved=213
-[2021.04.29-18.48.37:948][  0]LogCookCommandlet: Display:     SavePackageTimeSec=0.684327
-[2021.04.29-18.48.37:949][  0]LogCookCommandlet: Display:     TagPackageExportsPresaveTimeSec=0.031535
-[2021.04.29-18.48.37:949][  0]LogCookCommandlet: Display:     TagPackageExportsTimeSec=0.010646
-[2021.04.29-18.48.37:949][  0]LogCookCommandlet: Display:     FullyLoadLoadersTimeSec=0.000126
-[2021.04.29-18.48.37:949][  0]LogCookCommandlet: Display:     ResetLoadersTimeSec=0.000940
-[2021.04.29-18.48.37:949][  0]LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithOuter=0.001391
-[2021.04.29-18.48.37:950][  0]LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithMarks=0.000152
-[2021.04.29-18.48.37:950][  0]LogCookCommandlet: Display:     SerializeImportsTimeSec=0.000000
-[2021.04.29-18.48.37:950][  0]LogCookCommandlet: Display:     SortExportsSeekfreeInnerTimeSec=0.067200
-[2021.04.29-18.48.37:950][  0]LogCookCommandlet: Display:     SerializeExportsTimeSec=0.475172
-[2021.04.29-18.48.37:950][  0]LogCookCommandlet: Display:     SerializeBulkDataTimeSec=0.013508
-[2021.04.29-18.48.37:951][  0]LogCookCommandlet: Display:     AsyncWriteTimeSec=0.000000
-[2021.04.29-18.48.37:951][  0]LogCookCommandlet: Display:     MBWritten=530.842047
-[2021.04.29-18.48.37:951][  0]LogCookCommandlet: Display: Package.DifferentPackagesSizeMBPerAsset
-[2021.04.29-18.48.37:951][  0]LogCookCommandlet: Display: Package.NumberOfDifferencesInPackagesPerAsset
-[2021.04.29-18.48.37:951][  0]LogCookCommandlet: Display: Package.PackageDifferencesSizeMBPerAsset
-[2021.04.29-18.48.37:952][  0]LogCookCommandlet: Display: Package.DiffTotal
-[2021.04.29-18.48.37:952][  0]LogCookCommandlet: Display:     NumberOfDifferentPackages=0
-[2021.04.29-18.48.37:952][  0]LogCookCommandlet: Display:     DifferentPackagesSizeMB=0.000000
-[2021.04.29-18.48.37:953][  0]LogCookCommandlet: Display:     NumberOfDifferencesInPackages=0
-[2021.04.29-18.48.37:953][  0]LogCookCommandlet: Display:     PackageDifferencesSizeMB=0.000000
-[2021.04.29-18.48.37:953][  0]LogCookCommandlet: Display: UnversionedProperties
-[2021.04.29-18.48.37:953][  0]LogCookCommandlet: Display:     SavedStructs=0
-[2021.04.29-18.48.37:954][  0]LogCookCommandlet: Display:     SavedMB=0
-[2021.04.29-18.48.37:954][  0]LogCookCommandlet: Display:     EquivalentTaggedMB=0
-[2021.04.29-18.48.37:954][  0]LogCookCommandlet: Display:     CompressionRatio=-nan(ind)
-[2021.04.29-18.48.37:954][  0]LogCookCommandlet: Display:     BitfieldWasteKB=0
-[2021.04.29-18.48.37:955][  0]LogCookCommandlet: Display:
-[2021.04.29-18.48.37:955][  0]LogCookCommandlet: Display: Cook Profile
-[2021.04.29-18.48.37:955][  0]LogCookCommandlet: Display: ============
-[2021.04.29-18.48.37:955][  0]LogCookCommandlet: Display:  0.CookWallTimeSec=12.113106
-[2021.04.29-18.48.37:955][  0]LogCookCommandlet: Display:  0. 0.StartupWallTimeSec=4.809643
-[2021.04.29-18.48.37:955][  0]LogCookCommandlet: Display:  0. 1.CookByTheBookTimeSec=7.300921
-[2021.04.29-18.48.37:956][  0]LogCookCommandlet: Display:  0. 1. 0.StartCookByTheBookTimeSec=1.668007
-[2021.04.29-18.48.37:956][  0]LogCookCommandlet: Display:  0. 1. 0. 0.GameCookModificationDelegateTimeSec=0.000018
-[2021.04.29-18.48.37:956][  0]LogCookCommandlet: Display:  0. 1. 1.TickCookOnTheSideTimeSec=5.624025
-[2021.04.29-18.48.37:956][  0]LogCookCommandlet: Display:  0. 1. 1. 0.TickCookOnTheSideLoadPackagesTimeSec=0.727654
-[2021.04.29-18.48.37:957][  0]LogCookCommandlet: Display:  0. 1. 1. 1.TickCookOnTheSideSaveCookedPackageTimeSec=0.702072
-[2021.04.29-18.48.37:957][  0]LogCookCommandlet: Display:  0. 1. 1. 1. 0.TickCookOnTheSideResolveRedirectorsTimeSec=0.000000
-[2021.04.29-18.48.37:957][  0]LogCookCommandlet: Display:  0. 1. 1. 2.TickCookOnTheSideBeginPackageCacheForCookedPlatformDataTimeSec=0.486525
-[2021.04.29-18.48.37:958][  0]LogCookCommandlet: Display:  0. 1. 1. 3.TickCookOnTheSideFinishPackageCacheForCookedPlatformDataTimeSec=0.000000
-[2021.04.29-18.48.37:958][  0]LogCookCommandlet: Display:  0. 1. 2.TickLoopGCTimeSec=0.000000
-[2021.04.29-18.48.37:958][  0]LogCookCommandlet: Display:  0. 1. 3.TickLoopRecompileShaderRequestsTimeSec=0.001267
-[2021.04.29-18.48.37:958][  0]LogCookCommandlet: Display:  0. 1. 4.TickLoopShaderProcessAsyncResultsTimeSec=0.000032
-[2021.04.29-18.48.37:959][  0]LogCookCommandlet: Display:  0. 1. 5.TickLoopProcessDeferredCommandsTimeSec=0.000128
-[2021.04.29-18.48.37:959][  0]LogCookCommandlet: Display:  0. 1. 6.TickLoopTickCommandletStatsTimeSec=0.000021
-[2021.04.29-18.48.37:959][  0]LogCookCommandlet: Display:
-[2021.04.29-18.48.37:959][  0]LogCookCommandlet: Display: DDC Summary Stats
-[2021.04.29-18.48.37:959][  0]LogCookCommandlet: Display: =================
-[2021.04.29-18.48.37:960][  0]LogCookCommandlet: Display: TotalGetHits    =       584
-[2021.04.29-18.48.37:960][  0]LogCookCommandlet: Display: TotalGets       =       587
-[2021.04.29-18.48.37:960][  0]LogCookCommandlet: Display: TotalGetHitPct  =  0.994889
-[2021.04.29-18.48.37:960][  0]LogCookCommandlet: Display: LocalGetHitPct  =  0.521295
-[2021.04.29-18.48.37:960][  0]LogCookCommandlet: Display: SharedGetHitPct =  0.000000
-[2021.04.29-18.48.37:961][  0]LogCookCommandlet: Display: OtherGetHitPct  =  0.473595
-[2021.04.29-18.48.37:961][  0]LogCookCommandlet: Display: GetMissPct      =  0.005111
-[2021.04.29-18.48.37:961][  0]LogCookCommandlet: Display: TotalPutHits    =         0
-[2021.04.29-18.48.37:961][  0]LogCookCommandlet: Display: TotalPuts       =         0
-[2021.04.29-18.48.37:961][  0]LogCookCommandlet: Display: TotalPutHitPct  =  0.000000
-[2021.04.29-18.48.37:961][  0]LogCookCommandlet: Display: PutMissPct      =  0.000000
-[2021.04.29-18.48.37:962][  0]LogCookCommandlet: Display:
-[2021.04.29-18.48.37:962][  0]LogCookCommandlet: Display: DDC Resource Stats
-[2021.04.29-18.48.37:962][  0]LogCookCommandlet: Display: =======================================================================================================
-[2021.04.29-18.48.37:962][  0]LogCookCommandlet: Display: Asset Type                          Total Time (Sec)  GameThread Time (Sec)  Assets Built  MB Processed
-[2021.04.29-18.48.37:963][  0]LogCookCommandlet: Display: ----------------------------------  ----------------  ---------------------  ------------  ------------
-[2021.04.29-18.48.37:963][  0]LogCookCommandlet: Display: StaticMesh                                      0.54                   0.54             0        264.93
-[2021.04.29-18.48.37:963][  0]LogCookCommandlet: Display: PhysX (BodySetup)                               0.26                   0.26             0         80.25
-[2021.04.29-18.48.37:964][  0]LogCookCommandlet: Display: MaterialShader                                  0.18                   0.18             0          7.11
-[2021.04.29-18.48.37:964][  0]LogCookCommandlet: Display: Texture (Streaming)                             0.09                   0.00             0         35.91
-[2021.04.29-18.48.37:964][  0]LogCookCommandlet: Display: GlobalShader                                    0.01                   0.01             0          6.90
-[2021.04.29-18.48.37:965][  0]LogCookCommandlet: Display: NavCollision                                    0.00                   0.00             0          0.04
-[2021.04.29-18.48.37:965][  0]LogCookCommandlet: Display: Texture (Inline)                                0.00                   0.00             0        239.62
-[2021.04.29-18.48.37:965][  0]LogCookCommandlet: Display: DistanceField                                   0.00                   0.00             0          0.00
-[2021.04.29-18.48.37:966][  0]LogInit: Display:
-[2021.04.29-18.48.37:966][  0]LogInit: Display: Warning/Error Summary (Unique only)
-[2021.04.29-18.48.37:966][  0]LogInit: Display: -----------------------------------
-[2021.04.29-18.48.37:966][  0]LogInit: Display: LogLuminAPIImpl: Warning: MLSDK not found.  This likely means the MLSDK environment variable is not set.
-[2021.04.29-18.48.37:967][  0]LogInit: Display: LogCook: Warning: Unable to find package for cooking /Game/Import/AutomatedImport
-[2021.04.29-18.48.37:967][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.37:967][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.37:968][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.37:968][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-18.48.37:969][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-18.48.37:969][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-18.48.37:970][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-18.48.37:970][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-18.48.37:971][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-18.48.37:971][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-18.48.37:972][  0]LogInit: Display: LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-18.48.37:972][  0]LogInit: Display: LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture.WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-18.48.37:973][  0]LogInit: Display:
-[2021.04.29-18.48.37:973][  0]LogInit: Display: Success - 0 error(s), 38 warning(s)
-[2021.04.29-18.48.37:973][  0]LogInit: Display:
-Execution of commandlet took:  7.33 seconds
-[2021.04.29-18.48.38:101][  0]LogShaderCompilers: Display: Shaders left to compile 0
-[2021.04.29-18.48.38:145][  0]LogHttp: Display: cleaning up 0 outstanding Http requests.
-[2021.04.29-18.48.38:353][  0]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2021.05.14-18.42.12:784][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.05.14-18.42.12:802][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.05.14-18.42.12:822][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.05.14-18.42.12:822][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.05.14-18.42.12:832][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.05.14-18.42.12:842][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.05.14-18.42.12:850][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.05.14-18.42.12:858][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.05.14-18.42.12:867][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.05.14-18.42.12:875][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.05.14-18.42.12:884][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.05.14-18.42.12:908][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.05.14-18.42.12:908][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.05.14-18.42.12:915][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2021.05.14-18.42.12:925][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2021.05.14-18.42.12:933][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2021.05.14-18.42.12:940][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2021.05.14-18.42.12:955][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.05.14-18.42.12:955][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.05.14-18.42.12:963][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.05.14-18.42.12:971][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.05.14-18.42.12:979][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.05.14-18.42.12:987][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.05.14-18.42.12:987][  0]LogTargetPlatformManager: Display: Building Assets For WindowsNoEditor
+[2021.05.14-18.42.12:993][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.05.14-18.42.13:374][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.05.14-18.42.13:869][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.05.14-18.42.13:951][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ivan/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2021.05.14-18.42.13:965][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.05.14-18.42.13:973][  0]LogDerivedDataCache: Display: Performance to C:/Users/Ivan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=228.14MBs, RandomWriteSpeed=193.24MBs. Assigned SpeedClass 'Local'
+[2021.05.14-18.42.18:111][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.05.14-18.42.18:111][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.05.14-18.42.18:848][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2021.05.14-18.42.18:848][  0]LogCook: Display: Mobile HDR setting 1
+[2021.05.14-18.42.18:849][  0]LogCook: Display: Creating asset registry
+[2021.05.14-18.42.19:952][  0]LogCook: Display: Discovering localized assets for cultures: en
+[2021.05.14-18.42.19:954][  0]LogCook: Display: Unable to read previous cook inisettings for platform WindowsNoEditor invalidating cook
+[2021.05.14-18.42.19:955][  0]LogCook: Display: Clearing all cooked content for platform WindowsNoEditor
+[2021.05.14-18.42.19:976][  0]LogCook: Display: Sandbox cleanup took 0.022 seconds for platforms WindowsNoEditor
+[2021.05.14-18.42.21:886][  0]LogCook: Warning: Unable to find package for cooking /Game/Import/AutomatedImport
+[2021.05.14-18.42.21:887][  0]LogCook: Display: Cooked packages 0 Packages Remain 57 Total 57
+[2021.05.14-18.42.21:887][  0]LogCook: Display: Cook Diagnostics: OpenFileHandles=209, VirtualMemory=625MiB
+[2021.05.14-18.42.23:223][  0]LogCook: Display: Cooked packages 244 Packages Remain 10 Total 254
+[2021.05.14-18.42.23:660][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:661][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:661][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:663][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:663][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:664][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:665][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:665][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:666][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:667][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:668][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.23:668][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:669][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:670][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:670][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:671][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:672][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:673][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
+[2021.05.14-18.42.23:674][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
+[2021.05.14-18.42.23:674][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
+[2021.05.14-18.42.23:675][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:676][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:677][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
+[2021.05.14-18.42.23:677][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.23:813][  0]LogMaterial: Display: Missing cached shader map for material M_Schawk, compiling.
+[2021.05.14-18.42.23:820][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.05.14-18.42.23:821][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
+[2021.05.14-18.42.23:824][  0]LogMaterial: Display: Missing cached shader map for material M_PLastic, compiling.
+[2021.05.14-18.42.23:825][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.05.14-18.42.23:825][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
+[2021.05.14-18.42.23:828][  0]LogMaterial: Display: Missing cached shader map for material M_Folga, compiling.
+[2021.05.14-18.42.23:829][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.05.14-18.42.23:830][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
+[2021.05.14-18.42.24:062][  0]LogCook: Display: Cooked packages 255 Packages Remain 0 Total 255
+[2021.05.14-18.42.24:062][  0]LogCook: Display: Cook Diagnostics: OpenFileHandles=258, VirtualMemory=1197MiB
+[2021.05.14-18.42.24:063][  0]LogCook: Display: Finishing up...
+[2021.05.14-18.42.25:049][  0]LogCook: Display: Saving BulkData manifest(s)...
+[2021.05.14-18.42.25:050][  0]LogCook: Display: Done saving BulkData manifest(s)
+[2021.05.14-18.42.25:061][  0]LogBlueprintCodeGen: Display: Nativization Summary - AnimBP:
+[2021.05.14-18.42.25:061][  0]LogBlueprintCodeGen: Display: Name, Children, Non-empty Functions (Empty Functions), Variables, FunctionUsage, VariableUsage
+[2021.05.14-18.42.25:061][  0]LogBlueprintCodeGen: Display: Nativization Summary - Shared Variables From Graph: 0
+[2021.05.14-18.42.25:096][  0]LogAssetRegistryGenerator: Display: Looking for game openorder in dir D:/ue/App/Script/AssetsManagement/Template/Build/WindowsNoEditor/FileOpenOrder/GameOpenOrder.log
+[2021.05.14-18.42.25:106][  0]LogAssetRegistryGenerator: Display: Saving asset registry.
+[2021.05.14-18.42.25:119][  0]LogAssetRegistryGenerator: Display: Generated asset registry num assets 204, size is 93.19kb
+[2021.05.14-18.42.25:119][  0]LogAssetRegistryGenerator: Display: Done saving asset registry.
+[2021.05.14-18.42.25:141][  0]LogShaderLibrary: Display:
+[2021.05.14-18.42.25:142][  0]LogShaderLibrary: Display: Shader Code Stats: PCD3D_SM5
+[2021.05.14-18.42.25:142][  0]LogShaderLibrary: Display: =================
+[2021.05.14-18.42.25:142][  0]LogShaderLibrary: Display: Unique Shaders: 4025, Total Shaders: 4579, Unique Shadermaps: 293
+[2021.05.14-18.42.25:143][  0]LogShaderLibrary: Display: Unique Shaders Size: 9.15mb, Total Shader Size: 9.94mb
+[2021.05.14-18.42.25:143][  0]LogShaderLibrary: Display: =================
+[2021.05.14-18.42.25:144][  0]LogCook: Display: Cook by the book total time in tick 2.028157s total time 6.294317
+[2021.05.14-18.42.25:144][  0]LogCook: Display: Peak Used virtual 1405 MiB Peak Used physical 1300 MiB
+[2021.05.14-18.42.25:144][  0]LogCook: Display: Hierarchy Timer Information:
+[2021.05.14-18.42.25:144][  0]LogCook: Display:   Root: 0.000s (0)
+[2021.05.14-18.42.25:145][  0]LogCook: Display:     CleanSandbox: 0.022s (1)
+[2021.05.14-18.42.25:145][  0]LogCook: Display:       ProcessingAccessedStrings: 0.004s (1)
+[2021.05.14-18.42.25:145][  0]LogCook: Display:     CollectFilesToCook: 0.161s (1)
+[2021.05.14-18.42.25:145][  0]LogCook: Display:       CookModificationDelegate: 0.000s (1)
+[2021.05.14-18.42.25:146][  0]LogCook: Display:     GenerateLongPackageName: 0.000s (1)
+[2021.05.14-18.42.25:146][  0]LogCook: Display:     TickCookOnTheSide: 2.028s (6047)
+[2021.05.14-18.42.25:146][  0]LogCook: Display:       PostLoadPackageFixup: 0.003s (13431)
+[2021.05.14-18.42.25:146][  0]LogCook: Display:       LoadPackageForCooking: 0.486s (255)
+[2021.05.14-18.42.25:147][  0]LogCook: Display:       SavingPackages: 1.532s (6056)
+[2021.05.14-18.42.25:147][  0]LogCook: Display:         BeginPackageCacheForCookedPlatformData: 0.014s (31)
+[2021.05.14-18.42.25:147][  0]LogCook: Display:         PrecachePlatformDataForNextPackage: 0.821s (254)
+[2021.05.14-18.42.25:147][  0]LogCook: Display:           BeginPackageCacheForCookedPlatformData: 0.820s (224)
+[2021.05.14-18.42.25:148][  0]LogCook: Display:         SaveCookedPackage: 0.618s (255)
+[2021.05.14-18.42.25:148][  0]LogCook: Display:           GEditorSavePackage: 0.610s (206)
+[2021.05.14-18.42.25:148][  0]LogCook: Display:             ConvertingBlueprints: 0.005s (206)
+[2021.05.14-18.42.25:148][  0]LogCook: Display:             VerifyCanCookPackage: 0.001s (204)
+[2021.05.14-18.42.25:148][  0]LogCook: Display:         ClearAllCachedCookedPlatformData: 0.005s (255)
+[2021.05.14-18.42.25:149][  0]LogCook: Display:     FinalizePackageStore: 0.001s (1)
+[2021.05.14-18.42.25:149][  0]LogCook: Display:     GeneratingBlueprintAssets: 0.012s (1)
+[2021.05.14-18.42.25:149][  0]LogCook: Display:     SavingCurrentIniSettings: 0.018s (1)
+[2021.05.14-18.42.25:149][  0]LogCook: Display:       ProcessingAccessedStrings: 0.004s (1)
+[2021.05.14-18.42.25:149][  0]LogCook: Display:     SavingAssetRegistry: 0.060s (1)
+[2021.05.14-18.42.25:150][  0]LogCook: Display:       BuildChunkManifest: 0.010s (1)
+[2021.05.14-18.42.25:150][  0]LogCook: Display:       SaveManifests: 0.016s (1)
+[2021.05.14-18.42.25:150][  0]LogCook: Display:       SaveRealAssetRegistry: 0.013s (1)
+[2021.05.14-18.42.25:150][  0]LogCook: Display:       WriteCookerOpenOrder: 0.002s (1)
+[2021.05.14-18.42.25:151][  0]LogCook: Display: Done!
+[2021.05.14-18.42.25:152][  0]LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture, but it was never saved as an export.
+[2021.05.14-18.42.25:152][  0]LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture.WhiteSquareTexture, but it was never saved as an export.
+[2021.05.14-18.42.25:153][  0]LogSavePackage: Display: Took 0.002307s to verify the EDL loading graph.
+[2021.05.14-18.42.25:165][  0]LogCookCommandlet: Display: Misc Cook Stats
+[2021.05.14-18.42.25:165][  0]LogCookCommandlet: Display: ===============
+[2021.05.14-18.42.25:165][  0]LogCookCommandlet: Display: NiagaraShader.Misc
+[2021.05.14-18.42.25:165][  0]LogCookCommandlet: Display:     ShadersCompiled=0
+[2021.05.14-18.42.25:165][  0]LogCookCommandlet: Display: ShaderCompiler
+[2021.05.14-18.42.25:166][  0]LogCookCommandlet: Display:     BlockingTimeSec=0.000003
+[2021.05.14-18.42.25:166][  0]LogCookCommandlet: Display:     AsyncCompileTimeSec=0.000000
+[2021.05.14-18.42.25:166][  0]LogCookCommandlet: Display:     GlobalBeginCompileShaderTimeSec=0.000000
+[2021.05.14-18.42.25:166][  0]LogCookCommandlet: Display:     GlobalBeginCompileShaderCalls=0
+[2021.05.14-18.42.25:167][  0]LogCookCommandlet: Display:     ProcessAsyncResultsTimeSec=0.002175
+[2021.05.14-18.42.25:167][  0]LogCookCommandlet: Display: GlobalShader.Misc
+[2021.05.14-18.42.25:167][  0]LogCookCommandlet: Display:     ShadersCompiled=0
+[2021.05.14-18.42.25:167][  0]LogCookCommandlet: Display: MeshMaterial.Misc
+[2021.05.14-18.42.25:167][  0]LogCookCommandlet: Display:     ShadersCompiled=0
+[2021.05.14-18.42.25:168][  0]LogCookCommandlet: Display: MaterialShader.Misc
+[2021.05.14-18.42.25:168][  0]LogCookCommandlet: Display:     ShadersCompiled=0
+[2021.05.14-18.42.25:168][  0]LogCookCommandlet: Display: Package.Load
+[2021.05.14-18.42.25:168][  0]LogCookCommandlet: Display:     NumPreloadedDependencies=14
+[2021.05.14-18.42.25:168][  0]LogCookCommandlet: Display:     NumInlineLoads=6
+[2021.05.14-18.42.25:169][  0]LogCookCommandlet: Display:     NumPackagesLoaded=173
+[2021.05.14-18.42.25:169][  0]LogCookCommandlet: Display:     LoadPackageTimeSec=0.920264
+[2021.05.14-18.42.25:169][  0]LogCookCommandlet: Display: CookOnTheFlyServer
+[2021.05.14-18.42.25:169][  0]LogCookCommandlet: Display:     PeakRequestQueueSize=39
+[2021.05.14-18.42.25:169][  0]LogCookCommandlet: Display:     PeakLoadQueueSize=207
+[2021.05.14-18.42.25:170][  0]LogCookCommandlet: Display:     PeakSaveQueueSize=199
+[2021.05.14-18.42.25:170][  0]LogCookCommandlet: Display: Package.Save
+[2021.05.14-18.42.25:170][  0]LogCookCommandlet: Display:     NumPackagesSaved=206
+[2021.05.14-18.42.25:170][  0]LogCookCommandlet: Display:     SavePackageTimeSec=0.596221
+[2021.05.14-18.42.25:171][  0]LogCookCommandlet: Display:     TagPackageExportsPresaveTimeSec=0.042084
+[2021.05.14-18.42.25:171][  0]LogCookCommandlet: Display:     TagPackageExportsTimeSec=0.014250
+[2021.05.14-18.42.25:171][  0]LogCookCommandlet: Display:     FullyLoadLoadersTimeSec=0.000135
+[2021.05.14-18.42.25:171][  0]LogCookCommandlet: Display:     ResetLoadersTimeSec=0.001033
+[2021.05.14-18.42.25:172][  0]LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithOuter=0.001712
+[2021.05.14-18.42.25:172][  0]LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithMarks=0.000179
+[2021.05.14-18.42.25:172][  0]LogCookCommandlet: Display:     SerializeImportsTimeSec=0.000000
+[2021.05.14-18.42.25:173][  0]LogCookCommandlet: Display:     SortExportsSeekfreeInnerTimeSec=0.082931
+[2021.05.14-18.42.25:173][  0]LogCookCommandlet: Display:     SerializeExportsTimeSec=0.348520
+[2021.05.14-18.42.25:173][  0]LogCookCommandlet: Display:     SerializeBulkDataTimeSec=0.006309
+[2021.05.14-18.42.25:173][  0]LogCookCommandlet: Display:     AsyncWriteTimeSec=0.000000
+[2021.05.14-18.42.25:173][  0]LogCookCommandlet: Display:     MBWritten=341.703124
+[2021.05.14-18.42.25:174][  0]LogCookCommandlet: Display: Package.DifferentPackagesSizeMBPerAsset
+[2021.05.14-18.42.25:174][  0]LogCookCommandlet: Display: Package.NumberOfDifferencesInPackagesPerAsset
+[2021.05.14-18.42.25:174][  0]LogCookCommandlet: Display: Package.PackageDifferencesSizeMBPerAsset
+[2021.05.14-18.42.25:174][  0]LogCookCommandlet: Display: Package.DiffTotal
+[2021.05.14-18.42.25:175][  0]LogCookCommandlet: Display:     NumberOfDifferentPackages=0
+[2021.05.14-18.42.25:175][  0]LogCookCommandlet: Display:     DifferentPackagesSizeMB=0.000000
+[2021.05.14-18.42.25:175][  0]LogCookCommandlet: Display:     NumberOfDifferencesInPackages=0
+[2021.05.14-18.42.25:175][  0]LogCookCommandlet: Display:     PackageDifferencesSizeMB=0.000000
+[2021.05.14-18.42.25:175][  0]LogCookCommandlet: Display: UnversionedProperties
+[2021.05.14-18.42.25:176][  0]LogCookCommandlet: Display:     SavedStructs=0
+[2021.05.14-18.42.25:176][  0]LogCookCommandlet: Display:     SavedMB=0
+[2021.05.14-18.42.25:176][  0]LogCookCommandlet: Display:     EquivalentTaggedMB=0
+[2021.05.14-18.42.25:176][  0]LogCookCommandlet: Display:     CompressionRatio=-nan(ind)
+[2021.05.14-18.42.25:176][  0]LogCookCommandlet: Display:     BitfieldWasteKB=0
+[2021.05.14-18.42.25:177][  0]LogCookCommandlet: Display:
+[2021.05.14-18.42.25:177][  0]LogCookCommandlet: Display: Cook Profile
+[2021.05.14-18.42.25:177][  0]LogCookCommandlet: Display: ============
+[2021.05.14-18.42.25:177][  0]LogCookCommandlet: Display:  0.CookWallTimeSec=13.605236
+[2021.05.14-18.42.25:178][  0]LogCookCommandlet: Display:  0. 0.StartupWallTimeSec=7.294003
+[2021.05.14-18.42.25:178][  0]LogCookCommandlet: Display:  0. 1.CookByTheBookTimeSec=6.306722
+[2021.05.14-18.42.25:178][  0]LogCookCommandlet: Display:  0. 1. 0.StartCookByTheBookTimeSec=3.037730
+[2021.05.14-18.42.25:178][  0]LogCookCommandlet: Display:  0. 1. 0. 0.GameCookModificationDelegateTimeSec=0.000016
+[2021.05.14-18.42.25:179][  0]LogCookCommandlet: Display:  0. 1. 1.TickCookOnTheSideTimeSec=3.117509
+[2021.05.14-18.42.25:179][  0]LogCookCommandlet: Display:  0. 1. 1. 0.TickCookOnTheSideLoadPackagesTimeSec=0.485793
+[2021.05.14-18.42.25:179][  0]LogCookCommandlet: Display:  0. 1. 1. 1.TickCookOnTheSideSaveCookedPackageTimeSec=0.618244
+[2021.05.14-18.42.25:179][  0]LogCookCommandlet: Display:  0. 1. 1. 1. 0.TickCookOnTheSideResolveRedirectorsTimeSec=0.000000
+[2021.05.14-18.42.25:180][  0]LogCookCommandlet: Display:  0. 1. 1. 2.TickCookOnTheSideBeginPackageCacheForCookedPlatformDataTimeSec=0.834246
+[2021.05.14-18.42.25:180][  0]LogCookCommandlet: Display:  0. 1. 1. 3.TickCookOnTheSideFinishPackageCacheForCookedPlatformDataTimeSec=0.000000
+[2021.05.14-18.42.25:180][  0]LogCookCommandlet: Display:  0. 1. 2.TickLoopGCTimeSec=0.000000
+[2021.05.14-18.42.25:180][  0]LogCookCommandlet: Display:  0. 1. 3.TickLoopRecompileShaderRequestsTimeSec=0.037939
+[2021.05.14-18.42.25:181][  0]LogCookCommandlet: Display:  0. 1. 4.TickLoopShaderProcessAsyncResultsTimeSec=0.001055
+[2021.05.14-18.42.25:181][  0]LogCookCommandlet: Display:  0. 1. 5.TickLoopProcessDeferredCommandsTimeSec=0.002597
+[2021.05.14-18.42.25:181][  0]LogCookCommandlet: Display:  0. 1. 6.TickLoopTickCommandletStatsTimeSec=0.000434
+[2021.05.14-18.42.25:182][  0]LogCookCommandlet: Display:
+[2021.05.14-18.42.25:182][  0]LogCookCommandlet: Display: DDC Summary Stats
+[2021.05.14-18.42.25:182][  0]LogCookCommandlet: Display: =================
+[2021.05.14-18.42.25:183][  0]LogCookCommandlet: Display: TotalGetHits    =       557
+[2021.05.14-18.42.25:183][  0]LogCookCommandlet: Display: TotalGets       =       560
+[2021.05.14-18.42.25:183][  0]LogCookCommandlet: Display: TotalGetHitPct  =  0.994643
+[2021.05.14-18.42.25:183][  0]LogCookCommandlet: Display: LocalGetHitPct  =  0.498214
+[2021.05.14-18.42.25:183][  0]LogCookCommandlet: Display: SharedGetHitPct =  0.000000
+[2021.05.14-18.42.25:184][  0]LogCookCommandlet: Display: OtherGetHitPct  =  0.496429
+[2021.05.14-18.42.25:184][  0]LogCookCommandlet: Display: GetMissPct      =  0.005357
+[2021.05.14-18.42.25:184][  0]LogCookCommandlet: Display: TotalPutHits    =         0
+[2021.05.14-18.42.25:184][  0]LogCookCommandlet: Display: TotalPuts       =         0
+[2021.05.14-18.42.25:184][  0]LogCookCommandlet: Display: TotalPutHitPct  =  0.000000
+[2021.05.14-18.42.25:184][  0]LogCookCommandlet: Display: PutMissPct      =  0.000000
+[2021.05.14-18.42.25:185][  0]LogCookCommandlet: Display:
+[2021.05.14-18.42.25:185][  0]LogCookCommandlet: Display: DDC Resource Stats
+[2021.05.14-18.42.25:185][  0]LogCookCommandlet: Display: =======================================================================================================
+[2021.05.14-18.42.25:185][  0]LogCookCommandlet: Display: Asset Type                          Total Time (Sec)  GameThread Time (Sec)  Assets Built  MB Processed
+[2021.05.14-18.42.25:186][  0]LogCookCommandlet: Display: ----------------------------------  ----------------  ---------------------  ------------  ------------
+[2021.05.14-18.42.25:186][  0]LogCookCommandlet: Display: PhysX (BodySetup)                               0.50                   0.50             0         23.90
+[2021.05.14-18.42.25:187][  0]LogCookCommandlet: Display: StaticMesh                                      0.39                   0.39             0         94.55
+[2021.05.14-18.42.25:187][  0]LogCookCommandlet: Display: MaterialShader                                  0.25                   0.25             0          7.11
+[2021.05.14-18.42.25:187][  0]LogCookCommandlet: Display: Texture (Streaming)                             0.14                   0.00             0         14.59
+[2021.05.14-18.42.25:188][  0]LogCookCommandlet: Display: GlobalShader                                    0.02                   0.02             0          6.90
+[2021.05.14-18.42.25:188][  0]LogCookCommandlet: Display: NavCollision                                    0.00                   0.00             0          0.02
+[2021.05.14-18.42.25:188][  0]LogCookCommandlet: Display: Texture (Inline)                                0.00                   0.00             0        239.61
+[2021.05.14-18.42.25:189][  0]LogCookCommandlet: Display: DistanceField                                   0.00                   0.00             0          0.00
+[2021.05.14-18.42.25:189][  0]LogInit: Display:
+[2021.05.14-18.42.25:189][  0]LogInit: Display: Warning/Error Summary (Unique only)
+[2021.05.14-18.42.25:189][  0]LogInit: Display: -----------------------------------
+[2021.05.14-18.42.25:191][  0]LogInit: Display: LogLuminAPIImpl: Warning: MLSDK not found.  This likely means the MLSDK environment variable is not set.
+[2021.05.14-18.42.25:191][  0]LogInit: Display: LogCook: Warning: Unable to find package for cooking /Game/Import/AutomatedImport
+[2021.05.14-18.42.25:191][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.25:192][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
+[2021.05.14-18.42.25:193][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.25:193][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
+[2021.05.14-18.42.25:194][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
+[2021.05.14-18.42.25:194][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.05.14-18.42.25:195][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.05.14-18.42.25:196][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.05.14-18.42.25:196][  0]LogInit: Display: LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture, but it was never saved as an export.
+[2021.05.14-18.42.25:197][  0]LogInit: Display: LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture.WhiteSquareTexture, but it was never saved as an export.
+[2021.05.14-18.42.25:197][  0]LogInit: Display:
+[2021.05.14-18.42.25:197][  0]LogInit: Display: Success - 0 error(s), 31 warning(s)
+[2021.05.14-18.42.25:198][  0]LogInit: Display:
+Execution of commandlet took:  6.35 seconds
+[2021.05.14-18.42.25:367][  0]LogShaderCompilers: Display: Shaders left to compile 0
+[2021.05.14-18.42.25:519][  0]LogHttp: Display: cleaning up 0 outstanding Http requests.
+[2021.05.14-18.42.25:756][  0]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
 Finish cooking assets
 Moving assets to destination folders
-pak D:/ue/App/Script/AssetsManagement/Template/Saved/Cooked/WindowsNoEditor/Template/Content inside d:/temp/AutomatedImport/AutomatedImport.pak
-D:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/UnrealPak.exe d:/temp/AutomatedImport/AutomatedImport.pak -Create=D:/ue/App/Script/AssetsManagement/Template/Saved/Cooked/WindowsNoEditor/Template/Content -compress
+pak D:/ue/App/Script/AssetsManagement/Template/Saved/Cooked/WindowsNoEditor/Template/Content inside d:/temp/AutomatedImport/test_asset.pak
+D:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/UnrealPak.exe d:/temp/AutomatedImport/test_asset.pak -Create=D:/ue/App/Script/AssetsManagement/Template/Saved/Cooked/WindowsNoEditor/Template/Content -compress
 LogPakFile: Display: Using command line for crypto configuration
-LogPakFile: Display: Added 45 entries to add to pak file.
+LogPakFile: Display: Added 30 entries to add to pak file.
 LogPakFile: Display: Collecting files to add to pak file...
-LogPakFile: Display: Collected 45 files in 0.00s.
-LogPakFile: Display: Creating pak d:/temp/AutomatedImport/AutomatedImport.pak.
+LogPakFile: Display: Collected 30 files in 0.00s.
+LogPakFile: Display: Creating pak d:/temp/AutomatedImport/test_asset.pak.
 LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
 LogDerivedDataCache: Display: Performance to C:/Users/Ivan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.00ms. RandomReadSpeed=999.00MBs, RandomWriteSpeed=999.00MBs. Assigned SpeedClass 'Local'
-LogPakFile: Display: Added 45 files, 91467147 bytes total, time 2.72s.
-LogPakFile: Display: PrimaryIndex size: 19626 bytes
-LogPakFile: Display: PathHashIndex size: 548 bytes
-LogPakFile: Display: FullDirectoryIndex size: 1482 bytes
-LogPakFile: Display: Compression summary: 29.83% of original size. Compressed Size 91367245 bytes, Original Size 306336512 bytes.
+LogPakFile: Display: Added 30 files, 35030479 bytes total, time 1.10s.
+LogPakFile: Display: PrimaryIndex size: 7266 bytes
+LogPakFile: Display: PathHashIndex size: 368 bytes
+LogPakFile: Display: FullDirectoryIndex size: 1095 bytes
+LogPakFile: Display: Compression summary: 32.40% of original size. Compressed Size 34992983 bytes, Original Size 108010009 bytes.
 LogPakFile: Display: Used compression formats (in priority order) 'Zlib, '
 LogPakFile: Display: Encryption - DISABLED
-LogPakFile: Display: Unreal pak executed in 2.724317 seconds
+LogPakFile: Display: Unreal pak executed in 1.104661 seconds
 Failed packing assets
 D:/ue/App/Script/AssetsManagement/Template/content//Game/Hotloadimport
 d:/temp/AutomatedImport/editor/content
 Finish moving assets
-received "WAITING_FOR_STATUSES"
+received "WAITING_FOR_STATUSES|"
 received unknown payload
-received "KILL_SERVER"
-stop server 
-python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
-server folder D:/ue/App/Script/AssetsManagement
-unziping archive D:/ue/App/Script/AssetsManagement/Template.zip to folder D:/ue/App/Script/AssetsManagement
-try starting up on ('localhost', 10000) port 10000 
-starting up on ('localhost', 10000) port 10000 
-waiting for a connection 
-connection from ('127.0.0.1', 49742)
-received "SEND_JOB_TO_SERVER"
-received new job 
-Cooking assets
-D:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/UE4Editor-Cmd.exe D:/ue/App/Script/AssetsManagement/Template/Template.uproject -run=cook -targetplatform=WindowsNoEditor -cookall -skipeditorcontent
-[2021.04.29-19.38.48:148][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2021.04.29-19.38.48:169][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2021.04.29-19.38.48:190][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2021.04.29-19.38.48:190][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2021.04.29-19.38.48:200][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2021.04.29-19.38.48:208][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2021.04.29-19.38.48:217][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2021.04.29-19.38.48:226][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2021.04.29-19.38.48:234][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2021.04.29-19.38.48:243][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2021.04.29-19.38.48:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2021.04.29-19.38.48:278][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2021.04.29-19.38.48:278][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2021.04.29-19.38.48:285][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
-[2021.04.29-19.38.48:294][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
-[2021.04.29-19.38.48:302][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
-[2021.04.29-19.38.48:310][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
-[2021.04.29-19.38.48:325][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2021.04.29-19.38.48:325][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2021.04.29-19.38.48:334][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.04.29-19.38.48:344][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.04.29-19.38.48:354][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.04.29-19.38.48:362][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.04.29-19.38.48:362][  0]LogTargetPlatformManager: Display: Building Assets For WindowsNoEditor
-[2021.04.29-19.38.48:368][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.04.29-19.38.48:748][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2021.04.29-19.38.49:249][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.04.29-19.38.49:322][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ivan/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
-[2021.04.29-19.38.49:334][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.04.29-19.38.49:343][  0]LogDerivedDataCache: Display: Performance to C:/Users/Ivan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=203.83MBs, RandomWriteSpeed=208.42MBs. Assigned SpeedClass 'Local'
-[2021.04.29-19.38.52:073][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.04.29-19.38.52:073][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.04.29-19.38.52:790][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
-[2021.04.29-19.38.52:790][  0]LogCook: Display: Mobile HDR setting 1
-[2021.04.29-19.38.52:792][  0]LogCook: Display: Creating asset registry
-[2021.04.29-19.38.53:640][  0]LogCook: Display: Discovering localized assets for cultures: en
-[2021.04.29-19.38.53:643][  0]LogCook: Display: Unable to read previous cook inisettings for platform WindowsNoEditor invalidating cook
-[2021.04.29-19.38.53:643][  0]LogCook: Display: Clearing all cooked content for platform WindowsNoEditor
-[2021.04.29-19.38.53:664][  0]LogCook: Display: Sandbox cleanup took 0.022 seconds for platforms WindowsNoEditor
-[2021.04.29-19.38.55:150][  0]LogCook: Warning: Unable to find package for cooking /Game/Import/AutomatedImport
-[2021.04.29-19.38.55:151][  0]LogCook: Display: Cooked packages 0 Packages Remain 64 Total 64
-[2021.04.29-19.38.55:151][  0]LogCook: Display: Cook Diagnostics: OpenFileHandles=209, VirtualMemory=604MiB
-[2021.04.29-19.38.56:344][  0]LogCook: Display: Cooked packages 197 Packages Remain 57 Total 254
-[2021.04.29-19.38.57:765][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:765][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:767][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:768][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:768][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:769][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:771][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:771][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:772][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:773][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:774][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:775][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:776][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:777][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:778][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:779][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:779][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:780][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-19.38.57:781][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-19.38.57:781][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-19.38.57:782][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:783][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:784][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-19.38.57:784][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.38.57:786][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-19.38.57:786][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-19.38.57:787][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-19.38.57:788][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:788][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.57:789][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-19.38.57:790][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.38.58:077][  0]LogMaterial: Display: Missing cached shader map for material M_Schawk, compiling.
-[2021.04.29-19.39.01:610][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-19.39.01:612][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-19.39.01:616][  0]LogMaterial: Display: Missing cached shader map for material M_PLastic, compiling.
-[2021.04.29-19.39.01:619][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-19.39.01:621][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-19.39.01:624][  0]LogMaterial: Display: Missing cached shader map for material M_Folga, compiling.
-[2021.04.29-19.39.01:625][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-19.39.01:627][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-19.39.01:790][  0]LogCook: Display: Cooked packages 262 Packages Remain 0 Total 262
-[2021.04.29-19.39.01:791][  0]LogCook: Display: Cook Diagnostics: OpenFileHandles=266, VirtualMemory=1488MiB
-[2021.04.29-19.39.01:791][  0]LogCook: Display: Finishing up...
-[2021.04.29-19.39.08:726][  0]LogCook: Display: Saving BulkData manifest(s)...
-[2021.04.29-19.39.08:728][  0]LogCook: Display: Done saving BulkData manifest(s)
-[2021.04.29-19.39.08:735][  0]LogBlueprintCodeGen: Display: Nativization Summary - AnimBP:
-[2021.04.29-19.39.08:736][  0]LogBlueprintCodeGen: Display: Name, Children, Non-empty Functions (Empty Functions), Variables, FunctionUsage, VariableUsage
-[2021.04.29-19.39.08:736][  0]LogBlueprintCodeGen: Display: Nativization Summary - Shared Variables From Graph: 0
-[2021.04.29-19.39.08:785][  0]LogAssetRegistryGenerator: Display: Looking for game openorder in dir D:/ue/App/Script/AssetsManagement/Template/Build/WindowsNoEditor/FileOpenOrder/GameOpenOrder.log
-[2021.04.29-19.39.08:800][  0]LogAssetRegistryGenerator: Display: Saving asset registry.
-[2021.04.29-19.39.08:815][  0]LogAssetRegistryGenerator: Display: Generated asset registry num assets 211, size is 95.86kb
-[2021.04.29-19.39.08:816][  0]LogAssetRegistryGenerator: Display: Done saving asset registry.
-[2021.04.29-19.39.08:838][  0]LogShaderLibrary: Display:
-[2021.04.29-19.39.08:838][  0]LogShaderLibrary: Display: Shader Code Stats: PCD3D_SM5
-[2021.04.29-19.39.08:838][  0]LogShaderLibrary: Display: =================
-[2021.04.29-19.39.08:839][  0]LogShaderLibrary: Display: Unique Shaders: 4025, Total Shaders: 4579, Unique Shadermaps: 293
-[2021.04.29-19.39.08:839][  0]LogShaderLibrary: Display: Unique Shaders Size: 9.15mb, Total Shader Size: 9.94mb
-[2021.04.29-19.39.08:840][  0]LogShaderLibrary: Display: =================
-[2021.04.29-19.39.08:840][  0]LogCook: Display: Cook by the book total time in tick 6.617426s total time 16.048271
-[2021.04.29-19.39.08:841][  0]LogCook: Display: Peak Used virtual 1589 MiB Peak Used physical 1431 MiB
-[2021.04.29-19.39.08:841][  0]LogCook: Display: Hierarchy Timer Information:
-[2021.04.29-19.39.08:841][  0]LogCook: Display:   Root: 0.000s (0)
-[2021.04.29-19.39.08:841][  0]LogCook: Display:     CleanSandbox: 0.022s (1)
-[2021.04.29-19.39.08:842][  0]LogCook: Display:       ProcessingAccessedStrings: 0.005s (1)
-[2021.04.29-19.39.08:842][  0]LogCook: Display:     CollectFilesToCook: 0.150s (1)
-[2021.04.29-19.39.08:842][  0]LogCook: Display:       CookModificationDelegate: 0.000s (1)
-[2021.04.29-19.39.08:842][  0]LogCook: Display:     GenerateLongPackageName: 0.000s (1)
-[2021.04.29-19.39.08:843][  0]LogCook: Display:     TickCookOnTheSide: 6.617s (541)
-[2021.04.29-19.39.08:843][  0]LogCook: Display:       PostLoadPackageFixup: 0.002s (1975)
-[2021.04.29-19.39.08:843][  0]LogCook: Display:       LoadPackageForCooking: 1.279s (262)
-[2021.04.29-19.39.08:843][  0]LogCook: Display:       SavingPackages: 5.332s (552)
-[2021.04.29-19.39.08:844][  0]LogCook: Display:         BeginPackageCacheForCookedPlatformData: 3.561s (16)
-[2021.04.29-19.39.08:844][  0]LogCook: Display:         PrecachePlatformDataForNextPackage: 1.002s (260)
-[2021.04.29-19.39.08:844][  0]LogCook: Display:           BeginPackageCacheForCookedPlatformData: 1.002s (246)
-[2021.04.29-19.39.08:845][  0]LogCook: Display:         SaveCookedPackage: 0.744s (262)
-[2021.04.29-19.39.08:845][  0]LogCook: Display:           GEditorSavePackage: 0.737s (213)
-[2021.04.29-19.39.08:845][  0]LogCook: Display:             ConvertingBlueprints: 0.005s (213)
-[2021.04.29-19.39.08:845][  0]LogCook: Display:             VerifyCanCookPackage: 0.001s (211)
-[2021.04.29-19.39.08:845][  0]LogCook: Display:         ClearAllCachedCookedPlatformData: 0.005s (262)
-[2021.04.29-19.39.08:846][  0]LogCook: Display:     FinalizePackageStore: 0.002s (1)
-[2021.04.29-19.39.08:846][  0]LogCook: Display:     GeneratingBlueprintAssets: 0.009s (1)
-[2021.04.29-19.39.08:846][  0]LogCook: Display:     SavingCurrentIniSettings: 0.026s (1)
-[2021.04.29-19.39.08:847][  0]LogCook: Display:       ProcessingAccessedStrings: 0.004s (1)
-[2021.04.29-19.39.08:847][  0]LogCook: Display:     SavingAssetRegistry: 0.073s (1)
-[2021.04.29-19.39.08:847][  0]LogCook: Display:       BuildChunkManifest: 0.014s (1)
-[2021.04.29-19.39.08:847][  0]LogCook: Display:       SaveManifests: 0.021s (1)
-[2021.04.29-19.39.08:848][  0]LogCook: Display:       SaveRealAssetRegistry: 0.016s (1)
-[2021.04.29-19.39.08:848][  0]LogCook: Display:       WriteCookerOpenOrder: 0.002s (1)
-[2021.04.29-19.39.08:848][  0]LogCook: Display: Done!
-[2021.04.29-19.39.08:849][  0]LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-19.39.08:849][  0]LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture.WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-19.39.08:850][  0]LogSavePackage: Display: Took 0.001553s to verify the EDL loading graph.
-[2021.04.29-19.39.08:865][  0]LogCookCommandlet: Display: Misc Cook Stats
-[2021.04.29-19.39.08:865][  0]LogCookCommandlet: Display: ===============
-[2021.04.29-19.39.08:865][  0]LogCookCommandlet: Display: NiagaraShader.Misc
-[2021.04.29-19.39.08:865][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-19.39.08:865][  0]LogCookCommandlet: Display: ShaderCompiler
-[2021.04.29-19.39.08:866][  0]LogCookCommandlet: Display:     BlockingTimeSec=0.000002
-[2021.04.29-19.39.08:866][  0]LogCookCommandlet: Display:     AsyncCompileTimeSec=0.000000
-[2021.04.29-19.39.08:866][  0]LogCookCommandlet: Display:     GlobalBeginCompileShaderTimeSec=0.000000
-[2021.04.29-19.39.08:866][  0]LogCookCommandlet: Display:     GlobalBeginCompileShaderCalls=0
-[2021.04.29-19.39.08:866][  0]LogCookCommandlet: Display:     ProcessAsyncResultsTimeSec=0.000467
-[2021.04.29-19.39.08:867][  0]LogCookCommandlet: Display: GlobalShader.Misc
-[2021.04.29-19.39.08:867][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-19.39.08:867][  0]LogCookCommandlet: Display: MeshMaterial.Misc
-[2021.04.29-19.39.08:867][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-19.39.08:868][  0]LogCookCommandlet: Display: MaterialShader.Misc
-[2021.04.29-19.39.08:868][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-19.39.08:868][  0]LogCookCommandlet: Display: Package.Load
-[2021.04.29-19.39.08:868][  0]LogCookCommandlet: Display:     NumPreloadedDependencies=14
-[2021.04.29-19.39.08:868][  0]LogCookCommandlet: Display:     NumInlineLoads=7
-[2021.04.29-19.39.08:868][  0]LogCookCommandlet: Display:     NumPackagesLoaded=180
-[2021.04.29-19.39.08:869][  0]LogCookCommandlet: Display:     LoadPackageTimeSec=1.765515
-[2021.04.29-19.39.08:869][  0]LogCookCommandlet: Display: CookOnTheFlyServer
-[2021.04.29-19.39.08:869][  0]LogCookCommandlet: Display:     PeakRequestQueueSize=46
-[2021.04.29-19.39.08:869][  0]LogCookCommandlet: Display:     PeakLoadQueueSize=207
-[2021.04.29-19.39.08:869][  0]LogCookCommandlet: Display:     PeakSaveQueueSize=199
-[2021.04.29-19.39.08:870][  0]LogCookCommandlet: Display: Package.Save
-[2021.04.29-19.39.08:870][  0]LogCookCommandlet: Display:     NumPackagesSaved=213
-[2021.04.29-19.39.08:870][  0]LogCookCommandlet: Display:     SavePackageTimeSec=0.722422
-[2021.04.29-19.39.08:870][  0]LogCookCommandlet: Display:     TagPackageExportsPresaveTimeSec=0.035123
-[2021.04.29-19.39.08:870][  0]LogCookCommandlet: Display:     TagPackageExportsTimeSec=0.011648
-[2021.04.29-19.39.08:871][  0]LogCookCommandlet: Display:     FullyLoadLoadersTimeSec=0.000126
-[2021.04.29-19.39.08:871][  0]LogCookCommandlet: Display:     ResetLoadersTimeSec=0.000920
-[2021.04.29-19.39.08:871][  0]LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithOuter=0.001424
-[2021.04.29-19.39.08:871][  0]LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithMarks=0.000153
-[2021.04.29-19.39.08:871][  0]LogCookCommandlet: Display:     SerializeImportsTimeSec=0.000000
-[2021.04.29-19.39.08:872][  0]LogCookCommandlet: Display:     SortExportsSeekfreeInnerTimeSec=0.069031
-[2021.04.29-19.39.08:872][  0]LogCookCommandlet: Display:     SerializeExportsTimeSec=0.499072
-[2021.04.29-19.39.08:872][  0]LogCookCommandlet: Display:     SerializeBulkDataTimeSec=0.015606
-[2021.04.29-19.39.08:872][  0]LogCookCommandlet: Display:     AsyncWriteTimeSec=0.000000
-[2021.04.29-19.39.08:873][  0]LogCookCommandlet: Display:     MBWritten=530.842047
-[2021.04.29-19.39.08:873][  0]LogCookCommandlet: Display: Package.DifferentPackagesSizeMBPerAsset
-[2021.04.29-19.39.08:873][  0]LogCookCommandlet: Display: Package.NumberOfDifferencesInPackagesPerAsset
-[2021.04.29-19.39.08:873][  0]LogCookCommandlet: Display: Package.PackageDifferencesSizeMBPerAsset
-[2021.04.29-19.39.08:874][  0]LogCookCommandlet: Display: Package.DiffTotal
-[2021.04.29-19.39.08:874][  0]LogCookCommandlet: Display:     NumberOfDifferentPackages=0
-[2021.04.29-19.39.08:874][  0]LogCookCommandlet: Display:     DifferentPackagesSizeMB=0.000000
-[2021.04.29-19.39.08:874][  0]LogCookCommandlet: Display:     NumberOfDifferencesInPackages=0
-[2021.04.29-19.39.08:874][  0]LogCookCommandlet: Display:     PackageDifferencesSizeMB=0.000000
-[2021.04.29-19.39.08:875][  0]LogCookCommandlet: Display: UnversionedProperties
-[2021.04.29-19.39.08:875][  0]LogCookCommandlet: Display:     SavedStructs=0
-[2021.04.29-19.39.08:875][  0]LogCookCommandlet: Display:     SavedMB=0
-[2021.04.29-19.39.08:875][  0]LogCookCommandlet: Display:     EquivalentTaggedMB=0
-[2021.04.29-19.39.08:875][  0]LogCookCommandlet: Display:     CompressionRatio=-nan(ind)
-[2021.04.29-19.39.08:875][  0]LogCookCommandlet: Display:     BitfieldWasteKB=0
-[2021.04.29-19.39.08:876][  0]LogCookCommandlet: Display:
-[2021.04.29-19.39.08:876][  0]LogCookCommandlet: Display: Cook Profile
-[2021.04.29-19.39.08:876][  0]LogCookCommandlet: Display: ============
-[2021.04.29-19.39.08:876][  0]LogCookCommandlet: Display:  0.CookWallTimeSec=21.963245
-[2021.04.29-19.39.08:876][  0]LogCookCommandlet: Display:  0. 0.StartupWallTimeSec=5.895195
-[2021.04.29-19.39.08:877][  0]LogCookCommandlet: Display:  0. 1.CookByTheBookTimeSec=16.063245
-[2021.04.29-19.39.08:877][  0]LogCookCommandlet: Display:  0. 1. 0.StartCookByTheBookTimeSec=2.360099
-[2021.04.29-19.39.08:877][  0]LogCookCommandlet: Display:  0. 1. 0. 0.GameCookModificationDelegateTimeSec=0.000391
-[2021.04.29-19.39.08:877][  0]LogCookCommandlet: Display:  0. 1. 1.TickCookOnTheSideTimeSec=13.674804
-[2021.04.29-19.39.08:878][  0]LogCookCommandlet: Display:  0. 1. 1. 0.TickCookOnTheSideLoadPackagesTimeSec=1.278757
-[2021.04.29-19.39.08:878][  0]LogCookCommandlet: Display:  0. 1. 1. 1.TickCookOnTheSideSaveCookedPackageTimeSec=0.744201
-[2021.04.29-19.39.08:878][  0]LogCookCommandlet: Display:  0. 1. 1. 1. 0.TickCookOnTheSideResolveRedirectorsTimeSec=0.000000
-[2021.04.29-19.39.08:878][  0]LogCookCommandlet: Display:  0. 1. 1. 2.TickCookOnTheSideBeginPackageCacheForCookedPlatformDataTimeSec=4.563485
-[2021.04.29-19.39.08:879][  0]LogCookCommandlet: Display:  0. 1. 1. 3.TickCookOnTheSideFinishPackageCacheForCookedPlatformDataTimeSec=0.000000
-[2021.04.29-19.39.08:879][  0]LogCookCommandlet: Display:  0. 1. 2.TickLoopGCTimeSec=0.000000
-[2021.04.29-19.39.08:879][  0]LogCookCommandlet: Display:  0. 1. 3.TickLoopRecompileShaderRequestsTimeSec=0.006254
-[2021.04.29-19.39.08:879][  0]LogCookCommandlet: Display:  0. 1. 4.TickLoopShaderProcessAsyncResultsTimeSec=0.000114
-[2021.04.29-19.39.08:880][  0]LogCookCommandlet: Display:  0. 1. 5.TickLoopProcessDeferredCommandsTimeSec=0.000454
-[2021.04.29-19.39.08:880][  0]LogCookCommandlet: Display:  0. 1. 6.TickLoopTickCommandletStatsTimeSec=0.000068
-[2021.04.29-19.39.08:880][  0]LogCookCommandlet: Display:
-[2021.04.29-19.39.08:880][  0]LogCookCommandlet: Display: DDC Summary Stats
-[2021.04.29-19.39.08:881][  0]LogCookCommandlet: Display: =================
-[2021.04.29-19.39.08:881][  0]LogCookCommandlet: Display: TotalGetHits    =       584
-[2021.04.29-19.39.08:881][  0]LogCookCommandlet: Display: TotalGets       =       587
-[2021.04.29-19.39.08:881][  0]LogCookCommandlet: Display: TotalGetHitPct  =  0.994889
-[2021.04.29-19.39.08:881][  0]LogCookCommandlet: Display: LocalGetHitPct  =  0.521295
-[2021.04.29-19.39.08:882][  0]LogCookCommandlet: Display: SharedGetHitPct =  0.000000
-[2021.04.29-19.39.08:882][  0]LogCookCommandlet: Display: OtherGetHitPct  =  0.473595
-[2021.04.29-19.39.08:882][  0]LogCookCommandlet: Display: GetMissPct      =  0.005111
-[2021.04.29-19.39.08:882][  0]LogCookCommandlet: Display: TotalPutHits    =         0
-[2021.04.29-19.39.08:882][  0]LogCookCommandlet: Display: TotalPuts       =         0
-[2021.04.29-19.39.08:883][  0]LogCookCommandlet: Display: TotalPutHitPct  =  0.000000
-[2021.04.29-19.39.08:883][  0]LogCookCommandlet: Display: PutMissPct      =  0.000000
-[2021.04.29-19.39.08:883][  0]LogCookCommandlet: Display:
-[2021.04.29-19.39.08:883][  0]LogCookCommandlet: Display: DDC Resource Stats
-[2021.04.29-19.39.08:883][  0]LogCookCommandlet: Display: =======================================================================================================
-[2021.04.29-19.39.08:884][  0]LogCookCommandlet: Display: Asset Type                          Total Time (Sec)  GameThread Time (Sec)  Assets Built  MB Processed
-[2021.04.29-19.39.08:884][  0]LogCookCommandlet: Display: ----------------------------------  ----------------  ---------------------  ------------  ------------
-[2021.04.29-19.39.08:884][  0]LogCookCommandlet: Display: StaticMesh                                      0.98                   0.98             0        264.93
-[2021.04.29-19.39.08:884][  0]LogCookCommandlet: Display: PhysX (BodySetup)                               0.70                   0.70             0         80.25
-[2021.04.29-19.39.08:885][  0]LogCookCommandlet: Display: MaterialShader                                  0.36                   0.36             0          7.11
-[2021.04.29-19.39.08:885][  0]LogCookCommandlet: Display: Texture (Streaming)                             0.20                   0.00             0         35.91
-[2021.04.29-19.39.08:885][  0]LogCookCommandlet: Display: GlobalShader                                    0.04                   0.04             0          6.90
-[2021.04.29-19.39.08:886][  0]LogCookCommandlet: Display: NavCollision                                    0.02                   0.02             0          0.04
-[2021.04.29-19.39.08:886][  0]LogCookCommandlet: Display: Texture (Inline)                                0.00                   0.00             0        239.62
-[2021.04.29-19.39.08:887][  0]LogCookCommandlet: Display: DistanceField                                   0.00                   0.00             0          0.00
-[2021.04.29-19.39.08:887][  0]LogInit: Display:
-[2021.04.29-19.39.08:887][  0]LogInit: Display: Warning/Error Summary (Unique only)
-[2021.04.29-19.39.08:887][  0]LogInit: Display: -----------------------------------
-[2021.04.29-19.39.08:889][  0]LogInit: Display: LogLuminAPIImpl: Warning: MLSDK not found.  This likely means the MLSDK environment variable is not set.
-[2021.04.29-19.39.08:889][  0]LogInit: Display: LogCook: Warning: Unable to find package for cooking /Game/Import/AutomatedImport
-[2021.04.29-19.39.08:889][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.39.08:890][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.39.08:891][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.39.08:891][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-19.39.08:892][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-19.39.08:892][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-19.39.08:893][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-19.39.08:893][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-19.39.08:894][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-19.39.08:894][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-19.39.08:895][  0]LogInit: Display: LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-19.39.08:895][  0]LogInit: Display: LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture.WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-19.39.08:896][  0]LogInit: Display:
-[2021.04.29-19.39.08:896][  0]LogInit: Display: Success - 0 error(s), 38 warning(s)
-[2021.04.29-19.39.08:896][  0]LogInit: Display:
-Execution of commandlet took:  16.11 seconds
-[2021.04.29-19.39.09:339][  0]LogShaderCompilers: Display: Shaders left to compile 0
-[2021.04.29-19.39.09:625][  0]LogHttp: Display: cleaning up 0 outstanding Http requests.
-[2021.04.29-19.39.10:135][  0]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
-Finish cooking assets
-Moving assets to destination folders
-pak D:/ue/App/Script/AssetsManagement/Template/Saved/Cooked/WindowsNoEditor/Template/Content inside d:/temp/AutomatedImport/AutomatedImport.pak
-D:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/UnrealPak.exe d:/temp/AutomatedImport/AutomatedImport.pak -Create=D:/ue/App/Script/AssetsManagement/Template/Saved/Cooked/WindowsNoEditor/Template/Content -compress
-LogPakFile: Display: Using command line for crypto configuration
-LogPakFile: Display: Added 45 entries to add to pak file.
-LogPakFile: Display: Collecting files to add to pak file...
-LogPakFile: Display: Collected 45 files in 0.00s.
-LogPakFile: Display: Creating pak d:/temp/AutomatedImport/AutomatedImport.pak.
-LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-LogDerivedDataCache: Display: Performance to C:/Users/Ivan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.00ms. RandomReadSpeed=999.00MBs, RandomWriteSpeed=999.00MBs. Assigned SpeedClass 'Local'
-LogPakFile: Display: Added 45 files, 91468463 bytes total, time 2.96s.
-LogPakFile: Display: PrimaryIndex size: 19626 bytes
-LogPakFile: Display: PathHashIndex size: 548 bytes
-LogPakFile: Display: FullDirectoryIndex size: 1482 bytes
-LogPakFile: Display: Compression summary: 29.83% of original size. Compressed Size 91368561 bytes, Original Size 306336544 bytes.
-LogPakFile: Display: Used compression formats (in priority order) 'Zlib, '
-LogPakFile: Display: Encryption - DISABLED
-LogPakFile: Display: Unreal pak executed in 2.966123 seconds
-Failed packing assets
-D:/ue/App/Script/AssetsManagement/Template/content//Game/Hotloadimport
-d:/temp/AutomatedImport/editor/content
-Finish moving assets
-received "WAITING_FOR_STATUSES"
-received unknown payload
-received "KILL_SERVER"
-stop server 
-python version 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)]
-server folder D:/ue/App/Script/AssetsManagement
-unziping archive D:/ue/App/Script/AssetsManagement/Template.zip to folder D:/ue/App/Script/AssetsManagement
-try starting up on ('localhost', 10000) port 10000 
-starting up on ('localhost', 10000) port 10000 
-waiting for a connection 
-connection from ('127.0.0.1', 50830)
-received "SEND_JOB_TO_SERVER"
-received new job 
-Cooking assets
-D:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/UE4Editor-Cmd.exe D:/ue/App/Script/AssetsManagement/Template/Template.uproject -run=cook -targetplatform=WindowsNoEditor -cookall -skipeditorcontent
-[2021.04.29-21.04.33:204][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2021.04.29-21.04.33:225][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2021.04.29-21.04.33:250][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2021.04.29-21.04.33:250][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2021.04.29-21.04.33:262][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2021.04.29-21.04.33:271][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2021.04.29-21.04.33:281][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2021.04.29-21.04.33:292][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2021.04.29-21.04.33:302][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2021.04.29-21.04.33:312][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2021.04.29-21.04.33:322][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2021.04.29-21.04.33:350][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2021.04.29-21.04.33:350][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2021.04.29-21.04.33:359][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
-[2021.04.29-21.04.33:370][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
-[2021.04.29-21.04.33:379][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
-[2021.04.29-21.04.33:388][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
-[2021.04.29-21.04.33:404][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2021.04.29-21.04.33:404][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2021.04.29-21.04.33:414][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.04.29-21.04.33:424][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.04.29-21.04.33:434][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.04.29-21.04.33:443][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.04.29-21.04.33:443][  0]LogTargetPlatformManager: Display: Building Assets For WindowsNoEditor
-[2021.04.29-21.04.33:453][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.04.29-21.04.34:113][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2021.04.29-21.04.34:602][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.04.29-21.04.34:667][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Ivan/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
-[2021.04.29-21.04.34:678][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.04.29-21.04.34:689][  0]LogDerivedDataCache: Display: Performance to C:/Users/Ivan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.03ms. RandomReadSpeed=211.07MBs, RandomWriteSpeed=173.06MBs. Assigned SpeedClass 'Local'
-[2021.04.29-21.04.37:493][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.04.29-21.04.37:493][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.04.29-21.04.38:203][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
-[2021.04.29-21.04.38:204][  0]LogCook: Display: Mobile HDR setting 1
-[2021.04.29-21.04.38:206][  0]LogCook: Display: Creating asset registry
-[2021.04.29-21.04.39:061][  0]LogCook: Display: Discovering localized assets for cultures: en
-[2021.04.29-21.04.39:064][  0]LogCook: Display: Unable to read previous cook inisettings for platform WindowsNoEditor invalidating cook
-[2021.04.29-21.04.39:064][  0]LogCook: Display: Clearing all cooked content for platform WindowsNoEditor
-[2021.04.29-21.04.39:086][  0]LogCook: Display: Sandbox cleanup took 0.023 seconds for platforms WindowsNoEditor
-[2021.04.29-21.04.40:619][  0]LogCook: Warning: Unable to find package for cooking /Game/Import/AutomatedImport
-[2021.04.29-21.04.40:619][  0]LogCook: Display: Cooked packages 0 Packages Remain 64 Total 64
-[2021.04.29-21.04.40:620][  0]LogCook: Display: Cook Diagnostics: OpenFileHandles=209, VirtualMemory=603MiB
-[2021.04.29-21.04.42:860][  0]LogCook: Display: Cooked packages 241 Packages Remain 20 Total 261
-[2021.04.29-21.04.43:377][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:378][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:379][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:380][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:380][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:381][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:383][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:383][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:385][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:386][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:387][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:389][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:390][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:390][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:391][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:392][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:393][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:395][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-21.04.43:396][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-21.04.43:396][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-21.04.43:397][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:398][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:399][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-21.04.43:399][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.43:400][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-21.04.43:401][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-21.04.43:402][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-21.04.43:403][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.43:403][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.44:487][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-21.04.44:488][  0]LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.47:193][  0]LogCook: Display: Cooked packages 254 Packages Remain 8 Total 262
-[2021.04.29-21.04.47:194][  0]LogMaterial: Display: Missing cached shader map for material M_Schawk, compiling.
-[2021.04.29-21.04.50:456][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-21.04.50:457][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-21.04.50:459][  0]LogMaterial: Display: Missing cached shader map for material M_PLastic, compiling.
-[2021.04.29-21.04.50:459][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-21.04.50:460][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-21.04.50:461][  0]LogMaterial: Display: Missing cached shader map for material M_Folga, compiling.
-[2021.04.29-21.04.50:462][  0]LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-21.04.50:462][  0]LogMaterial: Display: 	(Node TextureSampleParameter2D) Param2D> Found NULL, requires Texture2D
-[2021.04.29-21.04.50:646][  0]LogCook: Display: Cooked packages 262 Packages Remain 0 Total 262
-[2021.04.29-21.04.50:646][  0]LogCook: Display: Cook Diagnostics: OpenFileHandles=265, VirtualMemory=1482MiB
-[2021.04.29-21.04.50:646][  0]LogCook: Display: Finishing up...
-[2021.04.29-21.04.56:544][  0]LogCook: Display: Saving BulkData manifest(s)...
-[2021.04.29-21.04.56:547][  0]LogCook: Display: Done saving BulkData manifest(s)
-[2021.04.29-21.04.56:554][  0]LogBlueprintCodeGen: Display: Nativization Summary - AnimBP:
-[2021.04.29-21.04.56:554][  0]LogBlueprintCodeGen: Display: Name, Children, Non-empty Functions (Empty Functions), Variables, FunctionUsage, VariableUsage
-[2021.04.29-21.04.56:555][  0]LogBlueprintCodeGen: Display: Nativization Summary - Shared Variables From Graph: 0
-[2021.04.29-21.04.56:594][  0]LogAssetRegistryGenerator: Display: Looking for game openorder in dir D:/ue/App/Script/AssetsManagement/Template/Build/WindowsNoEditor/FileOpenOrder/GameOpenOrder.log
-[2021.04.29-21.04.56:608][  0]LogAssetRegistryGenerator: Display: Saving asset registry.
-[2021.04.29-21.04.56:622][  0]LogAssetRegistryGenerator: Display: Generated asset registry num assets 211, size is 95.86kb
-[2021.04.29-21.04.56:623][  0]LogAssetRegistryGenerator: Display: Done saving asset registry.
-[2021.04.29-21.04.56:643][  0]LogShaderLibrary: Display:
-[2021.04.29-21.04.56:644][  0]LogShaderLibrary: Display: Shader Code Stats: PCD3D_SM5
-[2021.04.29-21.04.56:644][  0]LogShaderLibrary: Display: =================
-[2021.04.29-21.04.56:645][  0]LogShaderLibrary: Display: Unique Shaders: 4025, Total Shaders: 4579, Unique Shadermaps: 293
-[2021.04.29-21.04.56:645][  0]LogShaderLibrary: Display: Unique Shaders Size: 9.15mb, Total Shader Size: 9.94mb
-[2021.04.29-21.04.56:645][  0]LogShaderLibrary: Display: =================
-[2021.04.29-21.04.56:646][  0]LogCook: Display: Cook by the book total time in tick 9.986362s total time 18.440439
-[2021.04.29-21.04.56:646][  0]LogCook: Display: Peak Used virtual 1547 MiB Peak Used physical 1427 MiB
-[2021.04.29-21.04.56:646][  0]LogCook: Display: Hierarchy Timer Information:
-[2021.04.29-21.04.56:646][  0]LogCook: Display:   Root: 0.000s (0)
-[2021.04.29-21.04.56:647][  0]LogCook: Display:     CleanSandbox: 0.023s (1)
-[2021.04.29-21.04.56:647][  0]LogCook: Display:       ProcessingAccessedStrings: 0.005s (1)
-[2021.04.29-21.04.56:647][  0]LogCook: Display:     CollectFilesToCook: 0.142s (1)
-[2021.04.29-21.04.56:647][  0]LogCook: Display:       CookModificationDelegate: 0.000s (1)
-[2021.04.29-21.04.56:647][  0]LogCook: Display:     GenerateLongPackageName: 0.000s (1)
-[2021.04.29-21.04.56:647][  0]LogCook: Display:     TickCookOnTheSide: 9.986s (747)
-[2021.04.29-21.04.56:648][  0]LogCook: Display:       PostLoadPackageFixup: 0.002s (2593)
-[2021.04.29-21.04.56:648][  0]LogCook: Display:       LoadPackageForCooking: 4.719s (262)
-[2021.04.29-21.04.56:648][  0]LogCook: Display:       SavingPackages: 5.260s (758)
-[2021.04.29-21.04.56:648][  0]LogCook: Display:         BeginPackageCacheForCookedPlatformData: 3.317s (24)
-[2021.04.29-21.04.56:648][  0]LogCook: Display:         PrecachePlatformDataForNextPackage: 1.154s (260)
-[2021.04.29-21.04.56:649][  0]LogCook: Display:           BeginPackageCacheForCookedPlatformData: 1.154s (238)
-[2021.04.29-21.04.56:649][  0]LogCook: Display:         SaveCookedPackage: 0.764s (262)
-[2021.04.29-21.04.56:649][  0]LogCook: Display:           GEditorSavePackage: 0.757s (213)
-[2021.04.29-21.04.56:649][  0]LogCook: Display:             ConvertingBlueprints: 0.005s (213)
-[2021.04.29-21.04.56:649][  0]LogCook: Display:             VerifyCanCookPackage: 0.001s (211)
-[2021.04.29-21.04.56:649][  0]LogCook: Display:         ClearAllCachedCookedPlatformData: 0.004s (262)
-[2021.04.29-21.04.56:650][  0]LogCook: Display:     FinalizePackageStore: 0.003s (1)
-[2021.04.29-21.04.56:650][  0]LogCook: Display:     GeneratingBlueprintAssets: 0.008s (1)
-[2021.04.29-21.04.56:650][  0]LogCook: Display:     SavingCurrentIniSettings: 0.021s (1)
-[2021.04.29-21.04.56:650][  0]LogCook: Display:       ProcessingAccessedStrings: 0.004s (1)
-[2021.04.29-21.04.56:650][  0]LogCook: Display:     SavingAssetRegistry: 0.065s (1)
-[2021.04.29-21.04.56:650][  0]LogCook: Display:       BuildChunkManifest: 0.011s (1)
-[2021.04.29-21.04.56:651][  0]LogCook: Display:       SaveManifests: 0.018s (1)
-[2021.04.29-21.04.56:651][  0]LogCook: Display:       SaveRealAssetRegistry: 0.016s (1)
-[2021.04.29-21.04.56:651][  0]LogCook: Display:       WriteCookerOpenOrder: 0.002s (1)
-[2021.04.29-21.04.56:651][  0]LogCook: Display: Done!
-[2021.04.29-21.04.56:652][  0]LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-21.04.56:652][  0]LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture.WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-21.04.56:653][  0]LogSavePackage: Display: Took 0.001386s to verify the EDL loading graph.
-[2021.04.29-21.04.56:665][  0]LogCookCommandlet: Display: Misc Cook Stats
-[2021.04.29-21.04.56:665][  0]LogCookCommandlet: Display: ===============
-[2021.04.29-21.04.56:665][  0]LogCookCommandlet: Display: NiagaraShader.Misc
-[2021.04.29-21.04.56:666][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-21.04.56:666][  0]LogCookCommandlet: Display: ShaderCompiler
-[2021.04.29-21.04.56:666][  0]LogCookCommandlet: Display:     BlockingTimeSec=0.000002
-[2021.04.29-21.04.56:666][  0]LogCookCommandlet: Display:     AsyncCompileTimeSec=0.000000
-[2021.04.29-21.04.56:666][  0]LogCookCommandlet: Display:     GlobalBeginCompileShaderTimeSec=0.000000
-[2021.04.29-21.04.56:666][  0]LogCookCommandlet: Display:     GlobalBeginCompileShaderCalls=0
-[2021.04.29-21.04.56:666][  0]LogCookCommandlet: Display:     ProcessAsyncResultsTimeSec=0.000513
-[2021.04.29-21.04.56:667][  0]LogCookCommandlet: Display: GlobalShader.Misc
-[2021.04.29-21.04.56:667][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-21.04.56:667][  0]LogCookCommandlet: Display: MeshMaterial.Misc
-[2021.04.29-21.04.56:667][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-21.04.56:667][  0]LogCookCommandlet: Display: MaterialShader.Misc
-[2021.04.29-21.04.56:668][  0]LogCookCommandlet: Display:     ShadersCompiled=0
-[2021.04.29-21.04.56:668][  0]LogCookCommandlet: Display: Package.Load
-[2021.04.29-21.04.56:668][  0]LogCookCommandlet: Display:     NumPreloadedDependencies=14
-[2021.04.29-21.04.56:668][  0]LogCookCommandlet: Display:     NumInlineLoads=7
-[2021.04.29-21.04.56:668][  0]LogCookCommandlet: Display:     NumPackagesLoaded=180
-[2021.04.29-21.04.56:668][  0]LogCookCommandlet: Display:     LoadPackageTimeSec=5.194948
-[2021.04.29-21.04.56:669][  0]LogCookCommandlet: Display: CookOnTheFlyServer
-[2021.04.29-21.04.56:669][  0]LogCookCommandlet: Display:     PeakRequestQueueSize=46
-[2021.04.29-21.04.56:669][  0]LogCookCommandlet: Display:     PeakLoadQueueSize=207
-[2021.04.29-21.04.56:669][  0]LogCookCommandlet: Display:     PeakSaveQueueSize=199
-[2021.04.29-21.04.56:669][  0]LogCookCommandlet: Display: Package.Save
-[2021.04.29-21.04.56:669][  0]LogCookCommandlet: Display:     NumPackagesSaved=213
-[2021.04.29-21.04.56:669][  0]LogCookCommandlet: Display:     SavePackageTimeSec=0.743655
-[2021.04.29-21.04.56:670][  0]LogCookCommandlet: Display:     TagPackageExportsPresaveTimeSec=0.034765
-[2021.04.29-21.04.56:670][  0]LogCookCommandlet: Display:     TagPackageExportsTimeSec=0.010680
-[2021.04.29-21.04.56:670][  0]LogCookCommandlet: Display:     FullyLoadLoadersTimeSec=0.000122
-[2021.04.29-21.04.56:670][  0]LogCookCommandlet: Display:     ResetLoadersTimeSec=0.000945
-[2021.04.29-21.04.56:670][  0]LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithOuter=0.001385
-[2021.04.29-21.04.56:671][  0]LogCookCommandlet: Display:     TagPackageExportsGetObjectsWithMarks=0.000150
-[2021.04.29-21.04.56:671][  0]LogCookCommandlet: Display:     SerializeImportsTimeSec=0.000000
-[2021.04.29-21.04.56:671][  0]LogCookCommandlet: Display:     SortExportsSeekfreeInnerTimeSec=0.068460
-[2021.04.29-21.04.56:671][  0]LogCookCommandlet: Display:     SerializeExportsTimeSec=0.522195
-[2021.04.29-21.04.56:671][  0]LogCookCommandlet: Display:     SerializeBulkDataTimeSec=0.018422
-[2021.04.29-21.04.56:672][  0]LogCookCommandlet: Display:     AsyncWriteTimeSec=0.000000
-[2021.04.29-21.04.56:672][  0]LogCookCommandlet: Display:     MBWritten=530.842047
-[2021.04.29-21.04.56:672][  0]LogCookCommandlet: Display: Package.DifferentPackagesSizeMBPerAsset
-[2021.04.29-21.04.56:672][  0]LogCookCommandlet: Display: Package.NumberOfDifferencesInPackagesPerAsset
-[2021.04.29-21.04.56:672][  0]LogCookCommandlet: Display: Package.PackageDifferencesSizeMBPerAsset
-[2021.04.29-21.04.56:672][  0]LogCookCommandlet: Display: Package.DiffTotal
-[2021.04.29-21.04.56:673][  0]LogCookCommandlet: Display:     NumberOfDifferentPackages=0
-[2021.04.29-21.04.56:673][  0]LogCookCommandlet: Display:     DifferentPackagesSizeMB=0.000000
-[2021.04.29-21.04.56:673][  0]LogCookCommandlet: Display:     NumberOfDifferencesInPackages=0
-[2021.04.29-21.04.56:673][  0]LogCookCommandlet: Display:     PackageDifferencesSizeMB=0.000000
-[2021.04.29-21.04.56:673][  0]LogCookCommandlet: Display: UnversionedProperties
-[2021.04.29-21.04.56:673][  0]LogCookCommandlet: Display:     SavedStructs=0
-[2021.04.29-21.04.56:673][  0]LogCookCommandlet: Display:     SavedMB=0
-[2021.04.29-21.04.56:674][  0]LogCookCommandlet: Display:     EquivalentTaggedMB=0
-[2021.04.29-21.04.56:674][  0]LogCookCommandlet: Display:     CompressionRatio=-nan(ind)
-[2021.04.29-21.04.56:674][  0]LogCookCommandlet: Display:     BitfieldWasteKB=0
-[2021.04.29-21.04.56:674][  0]LogCookCommandlet: Display:
-[2021.04.29-21.04.56:674][  0]LogCookCommandlet: Display: Cook Profile
-[2021.04.29-21.04.56:674][  0]LogCookCommandlet: Display: ============
-[2021.04.29-21.04.56:675][  0]LogCookCommandlet: Display:  0.CookWallTimeSec=26.736555
-[2021.04.29-21.04.56:675][  0]LogCookCommandlet: Display:  0. 0.StartupWallTimeSec=8.281260
-[2021.04.29-21.04.56:675][  0]LogCookCommandlet: Display:  0. 1.CookByTheBookTimeSec=18.450787
-[2021.04.29-21.04.56:675][  0]LogCookCommandlet: Display:  0. 1. 0.StartCookByTheBookTimeSec=2.414438
-[2021.04.29-21.04.56:675][  0]LogCookCommandlet: Display:  0. 1. 0. 0.GameCookModificationDelegateTimeSec=0.000444
-[2021.04.29-21.04.56:676][  0]LogCookCommandlet: Display:  0. 1. 1.TickCookOnTheSideTimeSec=15.991493
-[2021.04.29-21.04.56:676][  0]LogCookCommandlet: Display:  0. 1. 1. 0.TickCookOnTheSideLoadPackagesTimeSec=4.719090
-[2021.04.29-21.04.56:676][  0]LogCookCommandlet: Display:  0. 1. 1. 1.TickCookOnTheSideSaveCookedPackageTimeSec=0.764213
-[2021.04.29-21.04.56:676][  0]LogCookCommandlet: Display:  0. 1. 1. 1. 0.TickCookOnTheSideResolveRedirectorsTimeSec=0.000000
-[2021.04.29-21.04.56:677][  0]LogCookCommandlet: Display:  0. 1. 1. 2.TickCookOnTheSideBeginPackageCacheForCookedPlatformDataTimeSec=4.470462
-[2021.04.29-21.04.56:677][  0]LogCookCommandlet: Display:  0. 1. 1. 3.TickCookOnTheSideFinishPackageCacheForCookedPlatformDataTimeSec=0.000000
-[2021.04.29-21.04.56:677][  0]LogCookCommandlet: Display:  0. 1. 2.TickLoopGCTimeSec=0.000000
-[2021.04.29-21.04.56:677][  0]LogCookCommandlet: Display:  0. 1. 3.TickLoopRecompileShaderRequestsTimeSec=0.020009
-[2021.04.29-21.04.56:678][  0]LogCookCommandlet: Display:  0. 1. 4.TickLoopShaderProcessAsyncResultsTimeSec=0.000147
-[2021.04.29-21.04.56:678][  0]LogCookCommandlet: Display:  0. 1. 5.TickLoopProcessDeferredCommandsTimeSec=0.000646
-[2021.04.29-21.04.56:678][  0]LogCookCommandlet: Display:  0. 1. 6.TickLoopTickCommandletStatsTimeSec=0.000097
-[2021.04.29-21.04.56:678][  0]LogCookCommandlet: Display:
-[2021.04.29-21.04.56:678][  0]LogCookCommandlet: Display: DDC Summary Stats
-[2021.04.29-21.04.56:679][  0]LogCookCommandlet: Display: =================
-[2021.04.29-21.04.56:679][  0]LogCookCommandlet: Display: TotalGetHits    =       584
-[2021.04.29-21.04.56:679][  0]LogCookCommandlet: Display: TotalGets       =       587
-[2021.04.29-21.04.56:679][  0]LogCookCommandlet: Display: TotalGetHitPct  =  0.994889
-[2021.04.29-21.04.56:679][  0]LogCookCommandlet: Display: LocalGetHitPct  =  0.521295
-[2021.04.29-21.04.56:679][  0]LogCookCommandlet: Display: SharedGetHitPct =  0.000000
-[2021.04.29-21.04.56:679][  0]LogCookCommandlet: Display: OtherGetHitPct  =  0.473595
-[2021.04.29-21.04.56:680][  0]LogCookCommandlet: Display: GetMissPct      =  0.005111
-[2021.04.29-21.04.56:680][  0]LogCookCommandlet: Display: TotalPutHits    =         0
-[2021.04.29-21.04.56:680][  0]LogCookCommandlet: Display: TotalPuts       =         0
-[2021.04.29-21.04.56:680][  0]LogCookCommandlet: Display: TotalPutHitPct  =  0.000000
-[2021.04.29-21.04.56:680][  0]LogCookCommandlet: Display: PutMissPct      =  0.000000
-[2021.04.29-21.04.56:680][  0]LogCookCommandlet: Display:
-[2021.04.29-21.04.56:681][  0]LogCookCommandlet: Display: DDC Resource Stats
-[2021.04.29-21.04.56:681][  0]LogCookCommandlet: Display: =======================================================================================================
-[2021.04.29-21.04.56:681][  0]LogCookCommandlet: Display: Asset Type                          Total Time (Sec)  GameThread Time (Sec)  Assets Built  MB Processed
-[2021.04.29-21.04.56:681][  0]LogCookCommandlet: Display: ----------------------------------  ----------------  ---------------------  ------------  ------------
-[2021.04.29-21.04.56:682][  0]LogCookCommandlet: Display: StaticMesh                                      1.01                   1.01             0        264.93
-[2021.04.29-21.04.56:682][  0]LogCookCommandlet: Display: PhysX (BodySetup)                               0.70                   0.70             0         80.25
-[2021.04.29-21.04.56:682][  0]LogCookCommandlet: Display: MaterialShader                                  0.54                   0.54             0          7.11
-[2021.04.29-21.04.56:682][  0]LogCookCommandlet: Display: Texture (Streaming)                             0.15                   0.00             0         35.91
-[2021.04.29-21.04.56:683][  0]LogCookCommandlet: Display: GlobalShader                                    0.12                   0.12             0          6.90
-[2021.04.29-21.04.56:683][  0]LogCookCommandlet: Display: NavCollision                                    0.02                   0.02             0          0.04
-[2021.04.29-21.04.56:683][  0]LogCookCommandlet: Display: Texture (Inline)                                0.00                   0.00             0        239.62
-[2021.04.29-21.04.56:684][  0]LogCookCommandlet: Display: DistanceField                                   0.00                   0.00             0          0.00
-[2021.04.29-21.04.56:684][  0]LogInit: Display:
-[2021.04.29-21.04.56:684][  0]LogInit: Display: Warning/Error Summary (Unique only)
-[2021.04.29-21.04.56:684][  0]LogInit: Display: -----------------------------------
-[2021.04.29-21.04.56:686][  0]LogInit: Display: LogLuminAPIImpl: Warning: MLSDK not found.  This likely means the MLSDK environment variable is not set.
-[2021.04.29-21.04.56:686][  0]LogInit: Display: LogCook: Warning: Unable to find package for cooking /Game/Import/AutomatedImport
-[2021.04.29-21.04.56:686][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.56:686][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.56:687][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.56:687][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/material/parent/M_Folga': Can't find file.
-[2021.04.29-21.04.56:688][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Totinos.uasset: Failed to load '/Game/texture/T_Color_Totinos': Can't find file.
-[2021.04.29-21.04.56:688][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/material/parent/M_PLastic': Can't find file.
-[2021.04.29-21.04.56:689][  0]LogInit: Display: LogUObjectGlobals: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\M_Fruzinga.uasset: Failed to load '/Game/texture/T_Color_fruzinga': Can't find file.
-[2021.04.29-21.04.56:689][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Schawk.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-21.04.56:690][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_PLastic.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-21.04.56:690][  0]LogInit: Display: LogMaterial: Warning: [AssetLog] D:\ue\App\Script\AssetsManagement\Template\Content\Game\Hotloadimport\material\parent\M_Folga.uasset: Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
-[2021.04.29-21.04.56:691][  0]LogInit: Display: LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-21.04.56:691][  0]LogInit: Display: LogSavePackage: Warning: /DatasmithContent/Materials/C4DMaster imported Serialize:/Engine/EditorLandscapeResources/WhiteSquareTexture.WhiteSquareTexture, but it was never saved as an export.
-[2021.04.29-21.04.56:691][  0]LogInit: Display:
-[2021.04.29-21.04.56:691][  0]LogInit: Display: Success - 0 error(s), 38 warning(s)
-[2021.04.29-21.04.56:692][  0]LogInit: Display:
-Execution of commandlet took:  18.49 seconds
-[2021.04.29-21.04.57:103][  0]LogShaderCompilers: Display: Shaders left to compile 0
-[2021.04.29-21.04.57:433][  0]LogHttp: Display: cleaning up 0 outstanding Http requests.
-[2021.04.29-21.04.57:491][  0]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
-Finish cooking assets
-Moving assets to destination folders
-pak D:/ue/App/Script/AssetsManagement/Template/Saved/Cooked/WindowsNoEditor/Template/Content inside d:/temp/AutomatedImport/AutomatedImport.pak
-D:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/UnrealPak.exe d:/temp/AutomatedImport/AutomatedImport.pak -Create=D:/ue/App/Script/AssetsManagement/Template/Saved/Cooked/WindowsNoEditor/Template/Content -compress
-LogPakFile: Display: Using command line for crypto configuration
-LogPakFile: Display: Added 45 entries to add to pak file.
-LogPakFile: Display: Collecting files to add to pak file...
-LogPakFile: Display: Collected 45 files in 0.00s.
-LogPakFile: Display: Creating pak d:/temp/AutomatedImport/AutomatedImport.pak.
-LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-LogDerivedDataCache: Display: Performance to C:/Users/Ivan/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.00ms. RandomReadSpeed=999.00MBs, RandomWriteSpeed=999.00MBs. Assigned SpeedClass 'Local'
-LogPakFile: Display: Added 45 files, 91467147 bytes total, time 4.12s.
-LogPakFile: Display: PrimaryIndex size: 19626 bytes
-LogPakFile: Display: PathHashIndex size: 548 bytes
-LogPakFile: Display: FullDirectoryIndex size: 1482 bytes
-LogPakFile: Display: Compression summary: 29.83% of original size. Compressed Size 91367245 bytes, Original Size 306336512 bytes.
-LogPakFile: Display: Used compression formats (in priority order) 'Zlib, '
-LogPakFile: Display: Encryption - DISABLED
-LogPakFile: Display: Unreal pak executed in 4.125798 seconds
-Failed packing assets
-D:/ue/App/Script/AssetsManagement/Template/content//Game/Hotloadimport
-d:/temp/AutomatedImport/editor/content
-Finish moving assets
-received "WAITING_FOR_STATUSES"
-received unknown payload
-received "KILL_SERVER"
+received "KILL_SERVER|"
 stop server 
