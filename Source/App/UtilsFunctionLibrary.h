@@ -31,5 +31,8 @@ class APP_API UUtilsFunctionLibrary : public UBlueprintFunctionLibrary
 		UFUNCTION(BlueprintCallable)
 		static const FString BinaryToBase64(const TArray<uint8>& RawFileData);
 
+		UFUNCTION(BlueprintCallable)
+		static const FString HttpRequestGetJsonAnswer(const FString& url);
+
 	
 };
