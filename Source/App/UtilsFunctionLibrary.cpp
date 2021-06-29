@@ -66,3 +66,14 @@ const FString UUtilsFunctionLibrary::BinaryToBase64(const TArray<uint8>& RawFile
 	const FString base64 = FBase64::Encode(RawFileData);
 	return base64;
 }
+
+const FString UUtilsFunctionLibrary::HttpRequestGetJsonAnswer(const FString& url)
+{
+	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> HttpRequest = FHttpModule::Get().CreateRequest();
+	HttpRequest->SetVerb("GET");
+	HttpRequest->SetHeader("Content-Type", "application/json");
+	HttpRequest->SetURL(url);
+	HttpRequest->ProcessRequest();
+	return "string";
+
+}
